@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "BSJRq/ZCbe2GRZZkN439MO4qmB8R3XQlyb/HDd5RfjLBBAnCXSqfL6BBzmeQ2bQzO5e5Wisv4oY4EuJXkWn29Q==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Asbjørn\\Desktop\\MiniProjekt2023\\MiniProjekt2023\\Server\\Server.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Asbjørn\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.21\\microsoft.netcore.app.ref.6.0.21.nupkg.sha512",
+    "C:\\Users\\Asbjørn\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.21\\microsoft.windowsdesktop.app.ref.6.0.21.nupkg.sha512",
+    "C:\\Users\\Asbjørn\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.21\\microsoft.aspnetcore.app.ref.6.0.21.nupkg.sha512",
+    "C:\\Users\\Asbjørn\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\6.0.21\\microsoft.netcore.app.host.win-x64.6.0.21.nupkg.sha512"
+  ],
+  "logs": []
+}
