@@ -818,3 +818,11 @@ C:\Users\Asbjørn\Desktop\MiniProjekt2023\MiniProjekt2023\Client\obj\Debug\net6.
 C:\Users\Asbjørn\Desktop\MiniProjekt2023\MiniProjekt2023\Client\obj\Debug\net6.0\refint\Client.dll
 C:\Users\Asbjørn\Desktop\MiniProjekt2023\MiniProjekt2023\Client\obj\Debug\net6.0\Client.pdb
 C:\Users\Asbjørn\Desktop\MiniProjekt2023\MiniProjekt2023\Client\obj\Debug\net6.0\ref\Client.dll
+C:\Users\Asbjørn\Desktop\MiniProjekt2023\MiniProjekt2023\Client\bin\Debug\net6.0\wwwroot\_framework\Shared.dll
+C:\Users\Asbjørn\Desktop\MiniProjekt2023\MiniProjekt2023\Client\bin\Debug\net6.0\wwwroot\_framework\Shared.pdb
+C:\Users\Asbjørn\Desktop\MiniProjekt2023\MiniProjekt2023\Client\bin\Debug\net6.0\wwwroot\_framework\Shared.dll.gz
+C:\Users\Asbjørn\Desktop\MiniProjekt2023\MiniProjekt2023\Client\bin\Debug\net6.0\wwwroot\_framework\Shared.pdb.gz
+C:\Users\Asbjørn\Desktop\MiniProjekt2023\MiniProjekt2023\Client\bin\Debug\net6.0\Shared.dll
+C:\Users\Asbjørn\Desktop\MiniProjekt2023\MiniProjekt2023\Client\bin\Debug\net6.0\Shared.pdb
+C:\Users\Asbjørn\Desktop\MiniProjekt2023\MiniProjekt2023\Client\obj\Debug\net6.0\build-gz\FwVtyjaB.gz
+C:\Users\Asbjørn\Desktop\MiniProjekt2023\MiniProjekt2023\Client\obj\Debug\net6.0\build-gz\SPvgqaHU.gz

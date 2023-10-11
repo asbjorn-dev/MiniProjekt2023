@@ -498,6 +498,16 @@
         "build": {
           "buildTransitive/netcoreapp3.1/_._": {}
         }
+      },
+      "Shared/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/Shared.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Shared.dll": {}
+        }
       }
     },
     "net6.0/browser-wasm": {
@@ -990,6 +1000,16 @@
         },
         "build": {
           "buildTransitive/netcoreapp3.1/_._": {}
+        }
+      },
+      "Shared/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/Shared.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Shared.dll": {}
         }
       }
     }
@@ -1753,12 +1773,18 @@
         "system.text.json.nuspec",
         "useSharedDesignerContext.txt"
       ]
+    },
+    "Shared/1.0.0": {
+      "type": "project",
+      "path": "../Shared/Shared.csproj",
+      "msbuildProject": "../Shared/Shared.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
       "Microsoft.AspNetCore.Components.WebAssembly >= 6.0.14",
-      "Microsoft.AspNetCore.Components.WebAssembly.DevServer >= 6.0.14"
+      "Microsoft.AspNetCore.Components.WebAssembly.DevServer >= 6.0.14",
+      "Shared >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -1793,7 +1819,11 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\Asbjørn\\Desktop\\MiniProjekt2023\\MiniProjekt2023\\Shared\\Shared.csproj": {
+              "projectPath": "C:\\Users\\Asbjørn\\Desktop\\MiniProjekt2023\\MiniProjekt2023\\Shared\\Shared.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

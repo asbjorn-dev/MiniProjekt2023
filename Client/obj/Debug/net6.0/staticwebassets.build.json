@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "/oZqFYyJYu3KSAxmpFrdoJgcsrWoVrp6rXOrWRmlrWQ=",
+  "Hash": "ojuq7nc4gCZaPjWpH/lDnX5JoibFMeRMmm5QOfVQaTU=",
   "Source": "Client",
   "BasePath": "/",
   "Mode": "Root",
@@ -695,6 +695,40 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\Asbjørn\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\6.0.21\\runtimes\\browser-wasm\\lib\\net6.0\\netstandard.dll"
+    },
+    {
+      "Identity": "C:\\Users\\Asbjørn\\Desktop\\MiniProjekt2023\\MiniProjekt2023\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Shared.dll",
+      "SourceId": "Client",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Users\\Asbjørn\\Desktop\\MiniProjekt2023\\MiniProjekt2023\\Client\\bin\\Debug\\net6.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Shared.dll",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "BlazorWebAssemblyResource",
+      "AssetTraitValue": "runtime",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\Asbjørn\\Desktop\\MiniProjekt2023\\MiniProjekt2023\\Shared\\bin\\Debug\\net6.0\\Shared.dll"
+    },
+    {
+      "Identity": "C:\\Users\\Asbjørn\\Desktop\\MiniProjekt2023\\MiniProjekt2023\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Shared.pdb",
+      "SourceId": "Client",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Users\\Asbjørn\\Desktop\\MiniProjekt2023\\MiniProjekt2023\\Client\\bin\\Debug\\net6.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Shared.pdb",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "BlazorWebAssemblyResource",
+      "AssetTraitValue": "symbol",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\Asbjørn\\Desktop\\MiniProjekt2023\\MiniProjekt2023\\Shared\\bin\\Debug\\net6.0\\Shared.pdb"
     },
     {
       "Identity": "C:\\Users\\Asbjørn\\Desktop\\MiniProjekt2023\\MiniProjekt2023\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.AppContext.dll",
@@ -4624,6 +4658,23 @@
       "OriginalItemSpec": "C:\\Users\\Asbjørn\\Desktop\\MiniProjekt2023\\MiniProjekt2023\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Security.AccessControl.dll"
     },
     {
+      "Identity": "C:\\Users\\Asbjørn\\Desktop\\MiniProjekt2023\\MiniProjekt2023\\Client\\obj\\Debug\\net6.0\\build-gz\\FwVtyjaB.gz",
+      "SourceId": "Client",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Users\\Asbjørn\\Desktop\\MiniProjekt2023\\MiniProjekt2023\\Client\\bin\\Debug\\net6.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Shared.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "C:\\Users\\Asbjørn\\Desktop\\MiniProjekt2023\\MiniProjekt2023\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Shared.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\Asbjørn\\Desktop\\MiniProjekt2023\\MiniProjekt2023\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Shared.dll"
+    },
+    {
       "Identity": "C:\\Users\\Asbjørn\\Desktop\\MiniProjekt2023\\MiniProjekt2023\\Client\\obj\\Debug\\net6.0\\build-gz\\gg33XCI6.gz",
       "SourceId": "Client",
       "SourceType": "Computed",
@@ -5999,6 +6050,23 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\Asbjørn\\Desktop\\MiniProjekt2023\\MiniProjekt2023\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.dll"
+    },
+    {
+      "Identity": "C:\\Users\\Asbjørn\\Desktop\\MiniProjekt2023\\MiniProjekt2023\\Client\\obj\\Debug\\net6.0\\build-gz\\SPvgqaHU.gz",
+      "SourceId": "Client",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Users\\Asbjørn\\Desktop\\MiniProjekt2023\\MiniProjekt2023\\Client\\bin\\Debug\\net6.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Shared.pdb.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "C:\\Users\\Asbjørn\\Desktop\\MiniProjekt2023\\MiniProjekt2023\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Shared.pdb",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\Asbjørn\\Desktop\\MiniProjekt2023\\MiniProjekt2023\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Shared.pdb"
     },
     {
       "Identity": "C:\\Users\\Asbjørn\\Desktop\\MiniProjekt2023\\MiniProjekt2023\\Client\\obj\\Debug\\net6.0\\build-gz\\swe0ETV7.gz",
