@@ -1,6 +1,7 @@
 ﻿namespace Shared;
 
-public class Class1
+public class Bruger
 {
-
+    public string Brugernavn { get; set; }
+    public int Bruger_Id { get; set; }
 }

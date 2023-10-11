@@ -9,3 +9,4 @@ C:\Users\Asbjørn\Desktop\MiniProjekt2023\MiniProjekt2023\Shared\obj\Debug\net6.
 C:\Users\Asbjørn\Desktop\MiniProjekt2023\MiniProjekt2023\Shared\obj\Debug\net6.0\refint\Shared.dll
 C:\Users\Asbjørn\Desktop\MiniProjekt2023\MiniProjekt2023\Shared\obj\Debug\net6.0\Shared.pdb
 C:\Users\Asbjørn\Desktop\MiniProjekt2023\MiniProjekt2023\Shared\obj\Debug\net6.0\ref\Shared.dll
+C:\Users\Asbjørn\Desktop\MiniProjekt2023\MiniProjekt2023\Shared\obj\Debug\net6.0\Shared.csproj.AssemblyReference.cache
