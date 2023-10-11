@@ -9,8 +9,9 @@ namespace Shared
 {
     public class Tråde
     {
-        public Tråde(string tekst, string overskrift)
+        public Tråde(Bruger bruger, string tekst, string overskrift)
         {
+            this.bruger = bruger;
             Antal_Stemmer = 0;
             Upvote = 0;
             Downvote = 0;
@@ -27,6 +28,7 @@ namespace Shared
         public int? Antal_Stemmer { get; set; }
         public int? Upvote { get; set; }
         public int? Downvote { get; set; }
-        public List<Kommentar> Kommentare { get; set; }
+        public List<Kommentar> Kommentare { get; set; } = new List<Kommentar>();
+        public Bruger bruger { get; set; }
     }
 }
