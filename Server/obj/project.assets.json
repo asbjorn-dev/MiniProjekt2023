@@ -578,6 +578,9 @@
       "Shared/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore.SQLite": "7.0.12"
+        },
         "compile": {
           "bin/placeholder/Shared.dll": {}
         },

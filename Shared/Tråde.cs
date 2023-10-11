@@ -12,7 +12,6 @@ namespace Shared
         public Tråde(Bruger bruger, string tekst, string overskrift)
         {
             this.bruger = bruger;
-            Antal_Stemmer = 0;
             Upvote = 0;
             Downvote = 0;
             Dato = DateTime.Now;
@@ -21,11 +20,12 @@ namespace Shared
             this.Tråde_Overskrift = overskrift;
 
         }
-        public int Tråde_Id { get; set; }
+        // tom kontruktør
+        public Tråde() { }
+        public int TrådeId { get; set; }
         public DateTime Dato { get; set; }
         public string Tråde_Overskrift { get; set; }
         public string Tekst { get; set; }
-        public int? Antal_Stemmer { get; set; }
         public int? Upvote { get; set; }
         public int? Downvote { get; set; }
         public List<Kommentar> Kommentare { get; set; } = new List<Kommentar>();
