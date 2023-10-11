@@ -55,9 +55,16 @@ app.MapGet("/api/tråde", async (DataService service) =>
     var trådes = await service.GetTrådesAsync();
     return trådes;
 });
+// post en tråd
 app.MapPost("/api/tråde", async (DataService service, Tråde tråd) =>
 {
     var trådes = await service.PostTrådesAsync(tråd);
+    return trådes;
+});
+// en post til at kommentere på en bestemt tråd id (Du får id med i URL/api'en
+app.MapPost("/api/tråde/kommentar/{id}", async (DataService service, Kommentar kommentar, int id) =>
+{
+    var trådes = await service.PostKommentarAsync(kommentar, id);
     return trådes;
 });
 
