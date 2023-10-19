@@ -77,6 +77,7 @@ C:\Users\Asbjørn\Desktop\MiniProjekt2023\MiniProjekt2023\Server\bin\Debug\net6.
 C:\Users\Asbjørn\Desktop\MiniProjekt2023\MiniProjekt2023\Server\bin\Debug\net6.0\runtimes\browser\lib\net6.0\System.Text.Encodings.Web.dll
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 C:\Users\Asbjørn\Desktop\MiniProjektReddit2023\MiniProjekt2023\Server\bin\Debug\net6.0\appsettings.Development.json
 C:\Users\Asbjørn\Desktop\MiniProjektReddit2023\MiniProjekt2023\Server\bin\Debug\net6.0\appsettings.json
 C:\Users\Asbjørn\Desktop\MiniProjektReddit2023\MiniProjekt2023\Server\bin\Debug\net6.0\Server.exe
@@ -157,6 +158,8 @@ C:\Users\Asbjørn\Desktop\MiniProjektReddit2023\MiniProjekt2023\Server\obj\Debug
 =======
 =======
 >>>>>>> 814c1b9682ee0a4b3135b9770e706fda98ecc8ea
+=======
+>>>>>>> 814c1b9682ee0a4b3135b9770e706fda98ecc8ea
 C:\Users\skriv\OneDrive - EFIF\Skrivebord\3. semester opgaver\Reddit\Server\bin\Debug\net6.0\appsettings.Development.json
 C:\Users\skriv\OneDrive - EFIF\Skrivebord\3. semester opgaver\Reddit\Server\bin\Debug\net6.0\appsettings.json
 C:\Users\skriv\OneDrive - EFIF\Skrivebord\3. semester opgaver\Reddit\Server\bin\Debug\net6.0\Server.exe
@@ -230,6 +233,9 @@ C:\Users\skriv\OneDrive - EFIF\Skrivebord\3. semester opgaver\Reddit\Server\obj\
 C:\Users\skriv\OneDrive - EFIF\Skrivebord\3. semester opgaver\Reddit\Server\obj\Debug\net6.0\Server.genruntimeconfig.cache
 C:\Users\skriv\OneDrive - EFIF\Skrivebord\3. semester opgaver\Reddit\Server\obj\Debug\net6.0\ref\Server.dll
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 814c1b9682ee0a4b3135b9770e706fda98ecc8ea
+=======
 >>>>>>> 814c1b9682ee0a4b3135b9770e706fda98ecc8ea
 =======
 >>>>>>> 814c1b9682ee0a4b3135b9770e706fda98ecc8ea

@@ -1703,7 +1703,6 @@ C:\Users\45204\source\repos\MiniProjekt2023\Client\obj\Debug\net6.0\refint\Clien
 C:\Users\45204\source\repos\MiniProjekt2023\Client\obj\Debug\net6.0\Client.pdb
 C:\Users\45204\source\repos\MiniProjekt2023\Client\obj\Debug\net6.0\ref\Client.dll
 <<<<<<< HEAD
-<<<<<<< HEAD
 C:\Users\Asbjørn\Desktop\MiniProjektReddit2023\MiniProjekt2023\Client\obj\Debug\net6.0\Client.csproj.AssemblyReference.cache
 C:\Users\Asbjørn\Desktop\MiniProjektReddit2023\MiniProjekt2023\Client\obj\Debug\net6.0\Client.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\Asbjørn\Desktop\MiniProjektReddit2023\MiniProjekt2023\Client\obj\Debug\net6.0\Client.AssemblyInfoInputs.cache
@@ -2581,7 +2580,6 @@ C:\Users\Asbjørn\Desktop\MiniProjektReddit2023\MiniProjekt2023\Client\obj\Debug
 C:\Users\Asbjørn\Desktop\MiniProjektReddit2023\MiniProjekt2023\Client\obj\Debug\net6.0\Client.pdb
 C:\Users\Asbjørn\Desktop\MiniProjektReddit2023\MiniProjekt2023\Client\obj\Debug\net6.0\ref\Client.dll
 =======
-=======
 >>>>>>> 814c1b9682ee0a4b3135b9770e706fda98ecc8ea
 C:\Users\skriv\OneDrive - EFIF\Skrivebord\3. semester opgaver\Reddit\Client\bin\Debug\net6.0\wwwroot\_framework\blazor.webassembly.js
 C:\Users\skriv\OneDrive - EFIF\Skrivebord\3. semester opgaver\Reddit\Client\bin\Debug\net6.0\wwwroot\_framework\dotnet.timezones.blat
@@ -3454,7 +3452,3 @@ C:\Users\skriv\OneDrive - EFIF\Skrivebord\3. semester opgaver\Reddit\Client\obj\
 C:\Users\skriv\OneDrive - EFIF\Skrivebord\3. semester opgaver\Reddit\Client\obj\Debug\net6.0\refint\Client.dll
 C:\Users\skriv\OneDrive - EFIF\Skrivebord\3. semester opgaver\Reddit\Client\obj\Debug\net6.0\Client.pdb
 C:\Users\skriv\OneDrive - EFIF\Skrivebord\3. semester opgaver\Reddit\Client\obj\Debug\net6.0\ref\Client.dll
-<<<<<<< HEAD
->>>>>>> 814c1b9682ee0a4b3135b9770e706fda98ecc8ea
-=======
->>>>>>> 814c1b9682ee0a4b3135b9770e706fda98ecc8ea
