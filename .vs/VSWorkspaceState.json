@@ -1,7 +1,10 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\Client",
+    "\\Client\\Pages",
+    "\\Server"
   ],
-  "SelectedNode": "\\C:\\Users\\skriv\\Source\\Repos\\MiniProjekt2023",
+  "SelectedNode": "\\Client\\Pages\\Tester.razor",
   "PreviewInSolutionExplorer": false
 }
