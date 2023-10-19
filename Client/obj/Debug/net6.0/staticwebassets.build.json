@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "vLMPAa1NKbnLSQ3/iqW6M8RkYYMHp4SvCN5mBSg0lo4=",
+  "Hash": "NHeN6m5ReWwESVmS06T++SDzGXafYrtK8eqMobnCtkI=",
   "Source": "Client",
   "BasePath": "/",
   "Mode": "Root",
@@ -153,6 +153,23 @@
       "OriginalItemSpec": "C:\\Users\\skriv\\.nuget\\packages\\sqlitepclraw.lib.e_sqlite3\\2.1.4\\runtimes\\browser-wasm\\nativeassets\\net6.0\\e_sqlite3.a"
     },
     {
+      "Identity": "C:\\Users\\skriv\\OneDrive - EFIF\\Skrivebord\\3. semester opgaver\\Reddit\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\icudt.dat",
+      "SourceId": "Client",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Users\\skriv\\OneDrive - EFIF\\Skrivebord\\3. semester opgaver\\Reddit\\Client\\bin\\Debug\\net6.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/icudt.dat",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "BlazorWebAssemblyResource",
+      "AssetTraitValue": "native",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\skriv\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\6.0.22\\runtimes\\browser-wasm\\native\\icudt.dat"
+    },
+    {
       "Identity": "C:\\Users\\skriv\\OneDrive - EFIF\\Skrivebord\\3. semester opgaver\\Reddit\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\icudt_CJK.dat",
       "SourceId": "Client",
       "SourceType": "Computed",
@@ -202,23 +219,6 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\skriv\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\6.0.22\\runtimes\\browser-wasm\\native\\icudt_no_CJK.dat"
-    },
-    {
-      "Identity": "C:\\Users\\skriv\\OneDrive - EFIF\\Skrivebord\\3. semester opgaver\\Reddit\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\icudt.dat",
-      "SourceId": "Client",
-      "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\skriv\\OneDrive - EFIF\\Skrivebord\\3. semester opgaver\\Reddit\\Client\\bin\\Debug\\net6.0\\wwwroot\\",
-      "BasePath": "/",
-      "RelativePath": "_framework/icudt.dat",
-      "AssetKind": "Build",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "BlazorWebAssemblyResource",
-      "AssetTraitValue": "native",
-      "CopyToOutputDirectory": "PreserveNewest",
-      "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Users\\skriv\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\6.0.22\\runtimes\\browser-wasm\\native\\icudt.dat"
     },
     {
       "Identity": "C:\\Users\\skriv\\OneDrive - EFIF\\Skrivebord\\3. semester opgaver\\Reddit\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Authorization.dll",
@@ -7361,23 +7361,6 @@
       "OriginalItemSpec": "wwwroot\\css\\bootstrap\\bootstrap.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\skriv\\OneDrive - EFIF\\Skrivebord\\3. semester opgaver\\Reddit\\Client\\wwwroot\\css\\open-iconic\\FONT-LICENSE",
-      "SourceId": "Client",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\skriv\\OneDrive - EFIF\\Skrivebord\\3. semester opgaver\\Reddit\\Client\\wwwroot\\",
-      "BasePath": "/",
-      "RelativePath": "css/open-iconic/FONT-LICENSE",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\css\\open-iconic\\FONT-LICENSE"
-    },
-    {
       "Identity": "C:\\Users\\skriv\\OneDrive - EFIF\\Skrivebord\\3. semester opgaver\\Reddit\\Client\\wwwroot\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css",
       "SourceId": "Client",
       "SourceType": "Discovered",
@@ -7478,6 +7461,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.woff"
+    },
+    {
+      "Identity": "C:\\Users\\skriv\\OneDrive - EFIF\\Skrivebord\\3. semester opgaver\\Reddit\\Client\\wwwroot\\css\\open-iconic\\FONT-LICENSE",
+      "SourceId": "Client",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\skriv\\OneDrive - EFIF\\Skrivebord\\3. semester opgaver\\Reddit\\Client\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "css/open-iconic/FONT-LICENSE",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\open-iconic\\FONT-LICENSE"
     },
     {
       "Identity": "C:\\Users\\skriv\\OneDrive - EFIF\\Skrivebord\\3. semester opgaver\\Reddit\\Client\\wwwroot\\css\\open-iconic\\ICON-LICENSE",
