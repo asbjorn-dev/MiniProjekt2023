@@ -2667,7 +2667,11 @@
   },
   "packageFolders": {
 <<<<<<< HEAD
+<<<<<<< HEAD
     "C:\\Users\\Asbjørn\\.nuget\\packages\\": {},
+=======
+    "C:\\Users\\skriv\\.nuget\\packages\\": {},
+>>>>>>> 814c1b9682ee0a4b3135b9770e706fda98ecc8ea
 =======
     "C:\\Users\\skriv\\.nuget\\packages\\": {},
 >>>>>>> 814c1b9682ee0a4b3135b9770e706fda98ecc8ea
@@ -2676,6 +2680,7 @@
   "project": {
     "version": "1.0.0",
     "restore": {
+<<<<<<< HEAD
 <<<<<<< HEAD
       "projectUniqueName": "C:\\Users\\Asbjørn\\Desktop\\MiniProjektReddit2023\\MiniProjekt2023\\Client\\Client.csproj",
       "projectName": "Client",
@@ -2689,13 +2694,24 @@
       "packagesPath": "C:\\Users\\skriv\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\skriv\\OneDrive - EFIF\\Skrivebord\\3. semester opgaver\\Reddit\\Client\\obj\\",
 >>>>>>> 814c1b9682ee0a4b3135b9770e706fda98ecc8ea
+=======
+      "projectUniqueName": "C:\\Users\\skriv\\OneDrive - EFIF\\Skrivebord\\3. semester opgaver\\Reddit\\Client\\Client.csproj",
+      "projectName": "Client",
+      "projectPath": "C:\\Users\\skriv\\OneDrive - EFIF\\Skrivebord\\3. semester opgaver\\Reddit\\Client\\Client.csproj",
+      "packagesPath": "C:\\Users\\skriv\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\skriv\\OneDrive - EFIF\\Skrivebord\\3. semester opgaver\\Reddit\\Client\\obj\\",
+>>>>>>> 814c1b9682ee0a4b3135b9770e706fda98ecc8ea
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
 <<<<<<< HEAD
+<<<<<<< HEAD
         "C:\\Users\\Asbjørn\\AppData\\Roaming\\NuGet\\NuGet.Config",
+=======
+        "C:\\Users\\skriv\\AppData\\Roaming\\NuGet\\NuGet.Config",
+>>>>>>> 814c1b9682ee0a4b3135b9770e706fda98ecc8ea
 =======
         "C:\\Users\\skriv\\AppData\\Roaming\\NuGet\\NuGet.Config",
 >>>>>>> 814c1b9682ee0a4b3135b9770e706fda98ecc8ea
@@ -2715,8 +2731,13 @@
           "targetAlias": "net6.0",
           "projectReferences": {
 <<<<<<< HEAD
+<<<<<<< HEAD
             "C:\\Users\\Asbjørn\\Desktop\\MiniProjektReddit2023\\MiniProjekt2023\\Shared\\Shared.csproj": {
               "projectPath": "C:\\Users\\Asbjørn\\Desktop\\MiniProjektReddit2023\\MiniProjekt2023\\Shared\\Shared.csproj"
+=======
+            "C:\\Users\\skriv\\OneDrive - EFIF\\Skrivebord\\3. semester opgaver\\Reddit\\Shared\\Shared.csproj": {
+              "projectPath": "C:\\Users\\skriv\\OneDrive - EFIF\\Skrivebord\\3. semester opgaver\\Reddit\\Shared\\Shared.csproj"
+>>>>>>> 814c1b9682ee0a4b3135b9770e706fda98ecc8ea
 =======
             "C:\\Users\\skriv\\OneDrive - EFIF\\Skrivebord\\3. semester opgaver\\Reddit\\Shared\\Shared.csproj": {
               "projectPath": "C:\\Users\\skriv\\OneDrive - EFIF\\Skrivebord\\3. semester opgaver\\Reddit\\Shared\\Shared.csproj"
@@ -2768,11 +2789,15 @@
           {
             "name": "Microsoft.NETCore.App.Runtime.Mono.browser-wasm",
 <<<<<<< HEAD
+<<<<<<< HEAD
             "version": "[6.0.21, 6.0.21]"
           },
           {
             "name": "Microsoft.WindowsDesktop.App.Ref",
             "version": "[6.0.21, 6.0.21]"
+=======
+            "version": "[6.0.22, 6.0.22]"
+>>>>>>> 814c1b9682ee0a4b3135b9770e706fda98ecc8ea
 =======
             "version": "[6.0.22, 6.0.22]"
 >>>>>>> 814c1b9682ee0a4b3135b9770e706fda98ecc8ea
@@ -2784,7 +2809,11 @@
           }
         },
 <<<<<<< HEAD
+<<<<<<< HEAD
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
+=======
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.414\\RuntimeIdentifierGraph.json"
+>>>>>>> 814c1b9682ee0a4b3135b9770e706fda98ecc8ea
 =======
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.414\\RuntimeIdentifierGraph.json"
 >>>>>>> 814c1b9682ee0a4b3135b9770e706fda98ecc8ea

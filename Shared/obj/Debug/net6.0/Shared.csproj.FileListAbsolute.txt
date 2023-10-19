@@ -27,6 +27,7 @@ C:\Users\45204\source\repos\MiniProjekt2023\Shared\obj\Debug\net6.0\Shared.pdb
 C:\Users\45204\source\repos\MiniProjekt2023\Shared\obj\Debug\net6.0\Shared.genruntimeconfig.cache
 C:\Users\45204\source\repos\MiniProjekt2023\Shared\obj\Debug\net6.0\ref\Shared.dll
 <<<<<<< HEAD
+<<<<<<< HEAD
 C:\Users\Asbjørn\Desktop\MiniProjektReddit2023\MiniProjekt2023\Shared\bin\Debug\net6.0\Shared.deps.json
 C:\Users\Asbjørn\Desktop\MiniProjektReddit2023\MiniProjekt2023\Shared\bin\Debug\net6.0\Shared.runtimeconfig.json
 C:\Users\Asbjørn\Desktop\MiniProjektReddit2023\MiniProjekt2023\Shared\bin\Debug\net6.0\Shared.dll
@@ -42,6 +43,8 @@ C:\Users\Asbjørn\Desktop\MiniProjektReddit2023\MiniProjekt2023\Shared\obj\Debug
 C:\Users\Asbjørn\Desktop\MiniProjektReddit2023\MiniProjekt2023\Shared\obj\Debug\net6.0\Shared.genruntimeconfig.cache
 C:\Users\Asbjørn\Desktop\MiniProjektReddit2023\MiniProjekt2023\Shared\obj\Debug\net6.0\ref\Shared.dll
 =======
+=======
+>>>>>>> 814c1b9682ee0a4b3135b9770e706fda98ecc8ea
 C:\Users\skriv\OneDrive - EFIF\Skrivebord\3. semester opgaver\Reddit\Shared\bin\Debug\net6.0\Shared.deps.json
 C:\Users\skriv\OneDrive - EFIF\Skrivebord\3. semester opgaver\Reddit\Shared\bin\Debug\net6.0\Shared.runtimeconfig.json
 C:\Users\skriv\OneDrive - EFIF\Skrivebord\3. semester opgaver\Reddit\Shared\bin\Debug\net6.0\Shared.dll
@@ -56,4 +59,7 @@ C:\Users\skriv\OneDrive - EFIF\Skrivebord\3. semester opgaver\Reddit\Shared\obj\
 C:\Users\skriv\OneDrive - EFIF\Skrivebord\3. semester opgaver\Reddit\Shared\obj\Debug\net6.0\Shared.pdb
 C:\Users\skriv\OneDrive - EFIF\Skrivebord\3. semester opgaver\Reddit\Shared\obj\Debug\net6.0\Shared.genruntimeconfig.cache
 C:\Users\skriv\OneDrive - EFIF\Skrivebord\3. semester opgaver\Reddit\Shared\obj\Debug\net6.0\ref\Shared.dll
+<<<<<<< HEAD
+>>>>>>> 814c1b9682ee0a4b3135b9770e706fda98ecc8ea
+=======
 >>>>>>> 814c1b9682ee0a4b3135b9770e706fda98ecc8ea

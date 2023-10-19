@@ -1,6 +1,7 @@
 {
   "version": 2,
 <<<<<<< HEAD
+<<<<<<< HEAD
   "dgSpecHash": "QRM8Gh6Cq7DpUD+sUsoFG63BGgb09xecVE/SFp+X4P6xScc2n37ICMSLeSgNBoPSIGK8IBezue6tVE0zqtySow==",
   "success": true,
   "projectFilePath": "C:\\Users\\Asbjørn\\Desktop\\MiniProjektReddit2023\\MiniProjekt2023\\Shared\\Shared.csproj",
@@ -42,6 +43,12 @@
   "success": true,
   "projectFilePath": "C:\\Users\\skriv\\OneDrive - EFIF\\Skrivebord\\3. semester opgaver\\Reddit\\Shared\\Shared.csproj",
   "expectedPackageFiles": [
+=======
+  "dgSpecHash": "8EYIweWDdj+Xt4CxWqyYsjuQZmWCP3m2Pj1pPOq3NBUyZUiViV54WRwkGWj8dCNkqD9yb85G79koY5f55a2uCg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\skriv\\OneDrive - EFIF\\Skrivebord\\3. semester opgaver\\Reddit\\Shared\\Shared.csproj",
+  "expectedPackageFiles": [
+>>>>>>> 814c1b9682ee0a4b3135b9770e706fda98ecc8ea
     "C:\\Users\\skriv\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\skriv\\.nuget\\packages\\microsoft.data.sqlite.core\\7.0.12\\microsoft.data.sqlite.core.7.0.12.nupkg.sha512",
     "C:\\Users\\skriv\\.nuget\\packages\\microsoft.entityframeworkcore\\7.0.12\\microsoft.entityframeworkcore.7.0.12.nupkg.sha512",
@@ -71,6 +78,9 @@
     "C:\\Users\\skriv\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
     "C:\\Users\\skriv\\.nuget\\packages\\system.text.encodings.web\\7.0.0\\system.text.encodings.web.7.0.0.nupkg.sha512",
     "C:\\Users\\skriv\\.nuget\\packages\\system.text.json\\7.0.0\\system.text.json.7.0.0.nupkg.sha512"
+<<<<<<< HEAD
+>>>>>>> 814c1b9682ee0a4b3135b9770e706fda98ecc8ea
+=======
 >>>>>>> 814c1b9682ee0a4b3135b9770e706fda98ecc8ea
   ],
   "logs": []
