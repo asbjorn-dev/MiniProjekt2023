@@ -1745,3 +1745,12 @@ C:\Users\skriv\OneDrive - EFIF\Skrivebord\3. semester opgaver\Reddit\Client\obj\
 C:\Users\skriv\OneDrive - EFIF\Skrivebord\3. semester opgaver\Reddit\Client\obj\Debug\net6.0\refint\Client.dll
 C:\Users\skriv\OneDrive - EFIF\Skrivebord\3. semester opgaver\Reddit\Client\obj\Debug\net6.0\Client.pdb
 C:\Users\skriv\OneDrive - EFIF\Skrivebord\3. semester opgaver\Reddit\Client\obj\Debug\net6.0\ref\Client.dll
+C:\Users\Asbjørn\Desktop\2023reddit\MiniProjekt2023\Client\obj\Debug\net6.0\Client.csproj.AssemblyReference.cache
+C:\Users\Asbjørn\Desktop\2023reddit\MiniProjekt2023\Client\obj\Debug\net6.0\Client.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Asbjørn\Desktop\2023reddit\MiniProjekt2023\Client\obj\Debug\net6.0\Client.AssemblyInfoInputs.cache
+C:\Users\Asbjørn\Desktop\2023reddit\MiniProjekt2023\Client\obj\Debug\net6.0\Client.AssemblyInfo.cs
+C:\Users\Asbjørn\Desktop\2023reddit\MiniProjekt2023\Client\obj\Debug\net6.0\Client.csproj.CoreCompileInputs.cache
+C:\Users\Asbjørn\Desktop\2023reddit\MiniProjekt2023\Client\obj\Debug\net6.0\Client.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Asbjørn\Desktop\2023reddit\MiniProjekt2023\Client\obj\Debug\net6.0\Client.dll
+C:\Users\Asbjørn\Desktop\2023reddit\MiniProjekt2023\Client\obj\Debug\net6.0\refint\Client.dll
+C:\Users\Asbjørn\Desktop\2023reddit\MiniProjekt2023\Client\obj\Debug\net6.0\Client.pdb
