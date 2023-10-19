@@ -2672,11 +2672,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Asbjørn\\Desktop\\MiniProjektReddit2023\\MiniProjekt2023\\Client\\Client.csproj",
+      "projectUniqueName": "C:\\Users\\Asbjørn\\Desktop\\MiniProjektReddit2023\\MiniProjekt2023\\client\\Client.csproj",
       "projectName": "Client",
-      "projectPath": "C:\\Users\\Asbjørn\\Desktop\\MiniProjektReddit2023\\MiniProjekt2023\\Client\\Client.csproj",
+      "projectPath": "C:\\Users\\Asbjørn\\Desktop\\MiniProjektReddit2023\\MiniProjekt2023\\client\\Client.csproj",
       "packagesPath": "C:\\Users\\Asbjørn\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Asbjørn\\Desktop\\MiniProjektReddit2023\\MiniProjekt2023\\Client\\obj\\",
+      "outputPath": "C:\\Users\\Asbjørn\\Desktop\\MiniProjektReddit2023\\MiniProjekt2023\\client\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

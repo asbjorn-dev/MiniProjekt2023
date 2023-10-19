@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "boxvqSRoAcoSmsJJlpLoymab/TKuvphNNvd9KlBA7Ph3YEcpepX0kyWJYjfsPwiM3X+/qD3FztFXYfKeC4gSnw==",
+  "dgSpecHash": "MiQi+iSowczkAr/esNnVastzgXrHdC8bsTE9eV3xY8xOvQqCZQfNynPixpiYaY9oGlZr2rScsoKZfV7DxEhWvw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Asbjørn\\Desktop\\MiniProjektReddit2023\\MiniProjekt2023\\Client\\Client.csproj",
+  "projectFilePath": "C:\\Users\\Asbjørn\\Desktop\\MiniProjektReddit2023\\MiniProjekt2023\\client\\Client.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Asbjørn\\.nuget\\packages\\microsoft.aspnetcore.authorization\\6.0.14\\microsoft.aspnetcore.authorization.6.0.14.nupkg.sha512",
     "C:\\Users\\Asbjørn\\.nuget\\packages\\microsoft.aspnetcore.components\\6.0.14\\microsoft.aspnetcore.components.6.0.14.nupkg.sha512",
@@ -47,10 +47,10 @@
     "C:\\Users\\Asbjørn\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
     "C:\\Users\\Asbjørn\\.nuget\\packages\\system.text.encodings.web\\7.0.0\\system.text.encodings.web.7.0.0.nupkg.sha512",
     "C:\\Users\\Asbjørn\\.nuget\\packages\\system.text.json\\7.0.0\\system.text.json.7.0.0.nupkg.sha512",
-    "C:\\Users\\Asbjørn\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.21\\microsoft.windowsdesktop.app.ref.6.0.21.nupkg.sha512",
     "C:\\Users\\Asbjørn\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.21\\microsoft.netcore.app.ref.6.0.21.nupkg.sha512",
-    "C:\\Users\\Asbjørn\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.21\\microsoft.aspnetcore.app.ref.6.0.21.nupkg.sha512",
-    "C:\\Users\\Asbjørn\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\6.0.21\\microsoft.netcore.app.runtime.mono.browser-wasm.6.0.21.nupkg.sha512"
+    "C:\\Users\\Asbjørn\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\6.0.21\\microsoft.netcore.app.runtime.mono.browser-wasm.6.0.21.nupkg.sha512",
+    "C:\\Users\\Asbjørn\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.21\\microsoft.windowsdesktop.app.ref.6.0.21.nupkg.sha512",
+    "C:\\Users\\Asbjørn\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.21\\microsoft.aspnetcore.app.ref.6.0.21.nupkg.sha512"
   ],
   "logs": []
 }
