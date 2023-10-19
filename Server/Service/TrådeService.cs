@@ -6,7 +6,7 @@ namespace Service
 {
     public class DataService
     {
-        private TrådeContext db { get; }
+        public TrådeContext db { get; }
 
         public DataService(TrådeContext DB)
         {

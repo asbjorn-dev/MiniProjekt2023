@@ -1,0 +1,43 @@
+﻿@page "/trådelist"
+@using global::Shared;
+@inject ApiService ApiService
+
+<h1>Threads</h1>
+
+<ul>
+    @if (tråde != null)
+    {
+        @foreach (var tråd in tråde)
+        {
+            <li>
+                <strong>@tråd.Tråde_Overskrift</strong><br />
+                <p>@tråd.Tekst</p>
+            </li>
+        }
+    }
+    else
+    {
+        <p>Loading data...</p>
+    }
+</ul>
+
+@code {
+    private Tråde[] tråde;
+    private string errorMessage;
+
+    [Inject]
+    private HttpClient Http { get; set; }
+
+    protected override async Task OnInitializedAsync()
+    {
+        try
+        {
+            tråde = await ApiService.GetTrådesAsync();
+        }
+        catch (Exception ex)
+        {
+            errorMessage = "Kan ikke hente data";
+            Console.WriteLine(ex); // Log the exception for debugging.
+        }
+    }
+}
