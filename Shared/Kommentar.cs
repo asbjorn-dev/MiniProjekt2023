@@ -22,9 +22,9 @@ namespace Shared
         }
         public int KommentarId { get; set; }
         public string Tekst { get; set; }
-        public DateTime Dato { get; set; }
-        public int? Upvote { get; set; }
-        public int? Downvote { get; set; }
+        public DateTime Dato { get; set; } = DateTime.Now;
+        public int? Upvote { get; set; } = 0;
+        public int? Downvote { get; set; } = 0;
         public Bruger Bruger { get; set; }
 
     }

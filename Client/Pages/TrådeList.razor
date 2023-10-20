@@ -14,11 +14,14 @@
                     <strong>@tråd.Tråde_Overskrift</strong><br />
                     <p>@tråd.Tekst</p>
                     <p>Skrevet af: @tråd.bruger.Brugernavn</p>
-                    <p>Upvotes: @tråd.Upvote</p>
-                    <p>Downvotes: @tråd.Downvote</p>
+                    <!-- Viser en Votes ud fra hver tråd hvor der minuses med dens upvote og downvote-->
+                    <p>Votes: @(tråd.Upvote - tråd.Downvote)</p>
+                    <button style="@SynlighedUpvote" @onclick="() => Upvote(tråd)">Upvote</button>
+                    <button style="@SynlighedDownvote" @onclick="() => Downvote(tråd)">Downvote</button>
                 </div>
             </li>
         }
+
     }
     else
     {
@@ -26,9 +29,34 @@
     }
 </ul>
 
+<EditForm Model="newTråd" OnValidSubmit="HandleValidSubmit">
+    <DataAnnotationsValidator />
+    <ValidationSummary />
+    <div class="form-group">
+        <label for="Tråde_Overskrift">Overskrift</label>
+        <InputText id="Tråde_Overskrift" @bind-Value="newTråd.Tråde_Overskrift" class="form-control" />
+    </div>
+
+    <div class="form-group">
+        <label for="Tekst">Tekst</label>
+        <InputText id="Tekst" @bind-Value="newTråd.Tekst" class="form-control" />
+    </div>
+
+    <div class="form-group">
+        <label for="Brugernavn">Forfatternavn</label>
+        <InputText id="Brugernavn" @bind-Value="newTråd.bruger.Brugernavn" class="form-control" />
+    </div>
+
+    <button type="submit" class="btn btn-primary">Opret Tråd</button>
+</EditForm>
+
 @code {
     private Tråde[] trådes;
+    private Tråde newTråd = new Tråde();
     private string errorMessage;
+    // variablerne nedenunder bruges til at ændre udseendet på knapperne når man trykker på dem
+    private string SynlighedUpvote = "visibility: visible;";
+    private string SynlighedDownvote = "visibility: visible;";
 
     [Inject]
     private HttpClient Http { get; set; }
@@ -41,19 +69,46 @@
         }
         catch (Exception ex)
         {
-            errorMessage = "Kan ikke hente data";
+            errorMessage = "Kan ikke hente data:" + ex.Message;
             Console.WriteLine(ex);
         }
-    }
-
-    private void OpretTråd()
-    {
-        // Implement the thread creation logic here
+        StateHasChanged();
     }
 
     public async Task HandleValidSubmit()
     {
-        // This method will be called when the form is submitted.
-        // Implement the logic to create a new thread here
+        try
+        {
+            var createdTråd = await ApiService.PostTrådeAsync(newTråd);
+            // visker editformen ren
+            newTråd = new Tråde();
+            // Opdater Listen med den tråd man lige har lavet ved at kalde på Get metoden igen
+            await ApiService.GetTrådesAsync();
+            StateHasChanged();
+        }
+        catch (Exception ex)
+        {
+            errorMessage = "Fejl ved oprettelse af tråd:" + ex.Message;
+            Console.WriteLine(ex);
+        }
+    }
+
+    // metoder der bliver kaldt når man trykker på downvote eller upvote knapperne
+    private void Upvote(Tråde tråd)
+    {
+        tråd.Upvote++;
+        //Ændre udseendet på knapperne når man trykker på dem
+        SynlighedUpvote = "opacity: 0.5;";
+        SynlighedDownvote = "visibility: visible;";
+        // Lav noget der opdater serveren/db med upvote
+    }
+
+    private void Downvote(Tråde tråd)
+    {
+        tråd.Downvote++;
+        //Ændre udseendet på knapperne når man trykker på dem
+        SynlighedDownvote = "opacity: 0.5;";
+        SynlighedUpvote = "visibility: visible;";
+        // Lav noget der opdater serveren/db med downvote
     }
 }
