@@ -1,1 +1,95 @@
-﻿
+﻿/*body {
+    font-family: Georgia, serif;
+}
+h1 {
+    font-size: 60px;
+}*/
+/* Apply styles to the body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    padding: 20px;
+}
+
+/* Style the main title */
+h1 {
+    text-align: center;
+    background-color: #0079D3;
+    color: white;
+    padding: 10px;
+}
+
+/* Style the container for the thread list */
+.thread-list {
+    list-style: none;
+    padding: 0;
+}
+
+/* Style each thread card */
+.thread-card {
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 10px 0;
+    padding: 10px;
+}
+
+/* Style thread titles */
+.thread-title {
+    font-size: 1.5rem;
+    color: #0079D3;
+}
+
+/* Style thread info */
+.thread-info {
+    margin-top: 10px;
+}
+
+    /* Style thread metadata */
+    .thread-info p {
+        margin: 0;
+        font-size: 0.9rem;
+    }
+
+/* Style the vote buttons */
+.vote-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.upvote-button,
+.downvote-button {
+    background-color: #0079D3;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+    .upvote-button:hover,
+    .downvote-button:hover {
+        background-color: #005FA6;
+    }
+
+/* Style comments */
+.comment-card {
+    background-color: #f5f5f5;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+    .comment-card p {
+        margin: 0;
+        font-size: 0.9rem;
+    }
+
+/* Add some spacing between elements */
+h1,
+ul,
+.edit-form {
+    margin-bottom: 20px;
+}

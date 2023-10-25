@@ -1,9 +1,12 @@
 ﻿@page "/trådelist"
 @using global::Shared;
 @inject ApiService ApiService
+
+<link rel="stylesheet" href="TrådeList.razor.css" />
+<body>
 <a href="https://github.com/DuckyDuke69/MiniProjekt2023">Besøg vores GitHub</a>
-<h1><span>&#8203;</span></h1>
-<h1>Tråder </h1>
+<h1>Tråddit </h1>
+
 <ul class="thread-list">
     @if (trådes != null)
     {
@@ -22,8 +25,8 @@
                     <p><strong>Tråd Votes:</strong> @(tråd.Upvote - tråd.Downvote)</p>
                 </div>
                 <div class="vote-buttons">
-                    <button class="upvote-button" style="@SynlighedUpvote" @onclick="() => UpvoteTråd(tråd.TrådeId)">Upvote Post</button>
-                    <button class="downvote-button" style="@SynlighedDownvote" @onclick="() => DownvoteTråd(tråd.TrådeId)">Downvote Post</button>
+                    <button class="upvote-button" @onclick="() => UpvoteTråd(tråd.TrådeId)">Upvote Post</button>
+                    <button class="downvote-button" @onclick="() => DownvoteTråd(tråd.TrådeId)">Downvote Post</button>
                 </div>
                 @foreach (var kommentar in tråd.Kommentare)
                 {
@@ -31,13 +34,13 @@
                        
                         <p><strong>Kommentarer</strong></p>
                         <p><strong>Kommentarens Brugernavn:</strong> @kommentar.Bruger.Brugernavn</p>
+                        <p><strong>Dato:</strong> @kommentar.Dato</p>
                         <p><strong>Kommentar Votes:</strong> @(kommentar.Upvote - kommentar.Downvote)</p>
                         <div class="vote-buttons">
                             <button class="upvote-button" @onclick="() => UpvoteKommentar(tråd.TrådeId, kommentar.KommentarId)">Upvote Kommentar</button>
                             <button class="downvote-button" @onclick="() => DownvoteKommentar(tråd.TrådeId, kommentar.KommentarId)">Downvote Kommentar</button>
                         </div>
                     </div>
-                    
                 }
                 <hr>
             </li>
@@ -52,72 +55,7 @@
     }
 </ul>
 
-@*<ul>
-    <table class="thread-table">
-    <thead>
-        <tr>
-            <th>Trådens ID</th>
-            <th>Overskrift</th>
-            <th>Tekst</th>
-            <th>Skrevet af</th>
-            <th>Dato</th>
-            <th>Tråd Votes</th>
-            <th>Vote Knapper</th>
-
-
-            
-        </tr>
-    </thead>
-    <tbody>
-        @if (trådes != null)
-        {
-            @foreach (var tråd in trådes)
-            {
-                <tr>
-                    <td>@tråd.TrådeId</td>
-                    <td><strong>@tråd.Tråde_Overskrift</strong></td>
-                    <td>@tråd.Tekst</td>
-                    <td>@tråd.bruger.Brugernavn</td>
-                    <td>@tråd.Dato</td>
-                    <td>@(tråd.Upvote - tråd.Downvote)</td>
-                    <td>
-                        <button class="upvote-button" style="@SynlighedUpvote" @onclick="() => UpvoteTråd(tråd.TrådeId)">Upvote Post</button>
-                        <button class="downvote-button" style="@SynlighedDownvote" @onclick="() => DownvoteTråd(tråd.TrådeId)">Downvote Post</button>
-                    </td>
-                </tr>
-                @foreach (var kommentar in tråd.Kommentare)
-                {
-                                <th>Kommentarer</th>
-            <th>Kommentarens Brugernavn</th>
-            <th>Kommentar Votes</th>
-            <th>Vote knapper</th>
-                    <tr>
-                        <td>@kommentar.Tekst</td>
-                        <td>@kommentar.Bruger.Brugernavn</td>
-                        <td>@(kommentar.Upvote - kommentar.Downvote)</td>
-                        <td>
-                            <button class="upvote-button" @onclick="() => UpvoteKommentar(tråd.TrådeId, kommentar.KommentarId)">Upvote Kommentar</button>
-                            <button class="downvote-button" @onclick="() => DownvoteKommentar(tråd.TrådeId, kommentar.KommentarId)">Downvote Kommentar</button>
-                        </td>
-                    </tr>
-                }
-            }
-        }
-         <h1><span>&#8203;</span></h1>
-    </tbody>
-</table>
-
-           
-        }
-         <h1><span>&#8203;</span></h1>
-        <h3>Skriv en Tråd her!</h3>
-
-    }
-    else
-    {
-        <p>Loading data...</p>
-    }
-</ul>*@
+         <h3>Skriv en Tråd her!</h3>
 <!-- Post en tråd -->
 <EditForm Model="newTråd" OnValidSubmit="HandleValidSubmitTråd">
     <DataAnnotationsValidator />
@@ -140,7 +78,6 @@
     <button type="submit" class="btn btn-primary">Opret Tråd</button>
 </EditForm>
 
-         <h1><span>&#8203;</span></h1>
          <h3>Skriv en kommentar her!</h3>
 
 <!--Post kommentar -->
@@ -167,7 +104,7 @@
 
     <button type="submit" class="btn btn-primary">Opret Kommentar</button>
 </EditForm>
-
+</body>
 @code {
     private Tråde[]? trådes;
     private Tråde newTråd = new Tråde();
@@ -177,11 +114,7 @@
     // Derfor laver vi en midlertidlig variabel der kan sende et id med når vi bruger metoden oppe i editform
     private int TrådId = 0;
 
-
     private string? errorMessage;
-    // variablerne nedenunder bruges til at ændre udseendet på knapperne når man trykker på dem
-    private string SynlighedUpvote = "visibility: visible;";
-    private string SynlighedDownvote = "visibility: visible;";
 
     [Inject]
     private HttpClient? Http { get; set; }
@@ -244,10 +177,6 @@
         await ApiService.PutUpvoteTrådAsync(id);
         trådes = await ApiService.GetTrådesAsync();
         StateHasChanged();
-        //Ændre udseendet på knapperne når man trykker på dem
-        SynlighedUpvote = "opacity: 0.5;";
-        SynlighedDownvote = "visibility: visible;";
-
     }
 
     private async Task DownvoteTråd(int id)
@@ -255,10 +184,6 @@
         await ApiService.PutDownvoteTrådAsync(id);
         trådes = await ApiService.GetTrådesAsync();
         StateHasChanged();
-        //Ændre udseendet på knapperne når man trykker på dem
-        SynlighedDownvote = "opacity: 0.5;";
-        SynlighedUpvote = "visibility: visible;";
-
     }
 
 

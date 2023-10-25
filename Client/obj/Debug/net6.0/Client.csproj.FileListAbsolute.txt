@@ -4370,3 +4370,4 @@ C:\Users\skriv\OneDrive - Efif\Skrivebord\3. semester opgaver\3SemAflevering\Min
 C:\Users\skriv\OneDrive - Efif\Skrivebord\3. semester opgaver\3SemAflevering\MiniProjekt2023\Client\obj\Debug\net6.0\build-gz\m+Bpjiqi.gz
 C:\Users\skriv\OneDrive - Efif\Skrivebord\3. semester opgaver\3SemAflevering\MiniProjekt2023\Client\obj\Debug\net6.0\build-gz\W3kUdtMX.gz
 C:\Users\skriv\OneDrive - Efif\Skrivebord\3. semester opgaver\3SemAflevering\MiniProjekt2023\Client\obj\Debug\net6.0\build-gz\U+R3i+tp.gz
+C:\Users\Asbjørn\Desktop\redditclone2023\MiniProjekt2023\Client\obj\Debug\net6.0\scopedcss\Pages\TrådeList.razor.rz.scp.css
