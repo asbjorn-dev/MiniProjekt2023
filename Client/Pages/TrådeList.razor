@@ -31,8 +31,7 @@
                 @foreach (var kommentar in tråd.Kommentare)
                 {
                     <div class="comment-card">
-                       
-                        <p><strong>Kommentarer</strong></p>
+                        <p><strong>Kommentarer</strong> @kommentar.Tekst</p>
                         <p><strong>Kommentarens Brugernavn:</strong> @kommentar.Bruger.Brugernavn</p>
                         <p><strong>Dato:</strong> @kommentar.Dato</p>
                         <p><strong>Kommentar Votes:</strong> @(kommentar.Upvote - kommentar.Downvote)</p>
