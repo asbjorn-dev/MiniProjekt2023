@@ -5,41 +5,43 @@ build_property.UsingMicrosoftNETSdkWeb =
 build_property.ProjectTypeGuids = 
 build_property.InvariantGlobalization = false
 build_property.PlatformNeutralAssembly = 
-build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = browser
+build_property.EnableSingleFileAnalyzer = 
+build_property.EnableTrimAnalyzer = true
+build_property.IncludeAllContentForSelfExtract = 
 build_property.RootNamespace = Client
 build_property.RootNamespace = Client
-build_property.ProjectDir = C:\Users\Asbjørn\Desktop\2023reddit\MiniProjekt2023\client\
+build_property.ProjectDir = C:\Users\skriv\OneDrive - EFIF\Skrivebord\3. semester opgaver\3SemAflevering\MiniProjekt2023\Client\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\Asbjørn\Desktop\2023reddit\MiniProjekt2023\client
+build_property.MSBuildProjectDirectory = C:\Users\skriv\OneDrive - EFIF\Skrivebord\3. semester opgaver\3SemAflevering\MiniProjekt2023\Client
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/Asbjørn/Desktop/2023reddit/MiniProjekt2023/client/App.razor]
+[C:/Users/skriv/OneDrive - EFIF/Skrivebord/3. semester opgaver/3SemAflevering/MiniProjekt2023/Client/App.razor]
 build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Asbjørn/Desktop/2023reddit/MiniProjekt2023/client/Pages/Index.razor]
+[C:/Users/skriv/OneDrive - EFIF/Skrivebord/3. semester opgaver/3SemAflevering/MiniProjekt2023/Client/Pages/Index.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXgucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Asbjørn/Desktop/2023reddit/MiniProjekt2023/client/Pages/Tester.razor]
+[C:/Users/skriv/OneDrive - EFIF/Skrivebord/3. semester opgaver/3SemAflevering/MiniProjekt2023/Client/Pages/Tester.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVGVzdGVyLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Asbjørn/Desktop/2023reddit/MiniProjekt2023/client/_Imports.razor]
+[C:/Users/skriv/OneDrive - EFIF/Skrivebord/3. semester opgaver/3SemAflevering/MiniProjekt2023/Client/_Imports.razor]
 build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Asbjørn/Desktop/2023reddit/MiniProjekt2023/client/Pages/TrådeList.razor]
+[C:/Users/skriv/OneDrive - EFIF/Skrivebord/3. semester opgaver/3SemAflevering/MiniProjekt2023/Client/Pages/TrådeList.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVHLDpWRlTGlzdC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = b-cbpm7o9pdg
 
-[C:/Users/Asbjørn/Desktop/2023reddit/MiniProjekt2023/client/Shared/MainLayout.razor]
+[C:/Users/skriv/OneDrive - EFIF/Skrivebord/3. semester opgaver/3SemAflevering/MiniProjekt2023/Client/Shared/MainLayout.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE1haW5MYXlvdXQucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-ocnk4r8tjs
 
-[C:/Users/Asbjørn/Desktop/2023reddit/MiniProjekt2023/client/Shared/NavMenu.razor]
+[C:/Users/skriv/OneDrive - EFIF/Skrivebord/3. semester opgaver/3SemAflevering/MiniProjekt2023/Client/Shared/NavMenu.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE5hdk1lbnUucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-kd1ih0s86n

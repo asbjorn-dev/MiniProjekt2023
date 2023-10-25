@@ -1,10 +1,58 @@
 ﻿@page "/trådelist"
 @using global::Shared;
 @inject ApiService ApiService
+<a href="https://github.com/DuckyDuke69/MiniProjekt2023">Besøg vores GitHub</a>
+<h1><span>&#8203;</span></h1>
+<h1>Tråder </h1>
+<ul class="thread-list">
+    @if (trådes != null)
+    {
+        @foreach (var tråd in trådes)
+        {
+            
+            <li class="thread-card">
+                
+                <h2 class="thread-title">@tråd.Tråde_Overskrift</h2>
+                <div class="thread-info">
+                    
+                    <p>Trådens ID: @tråd.TrådeId</p>
+                    <p><strong>Tekst:</strong> @tråd.Tekst</p>
+                    <p><strong>Skrevet af:</strong> @tråd.bruger.Brugernavn</p>
+                    <p><strong>Dato:</strong> @tråd.Dato</p>
+                    <p><strong>Tråd Votes:</strong> @(tråd.Upvote - tråd.Downvote)</p>
+                </div>
+                <div class="vote-buttons">
+                    <button class="upvote-button" style="@SynlighedUpvote" @onclick="() => UpvoteTråd(tråd.TrådeId)">Upvote Post</button>
+                    <button class="downvote-button" style="@SynlighedDownvote" @onclick="() => DownvoteTråd(tråd.TrådeId)">Downvote Post</button>
+                </div>
+                @foreach (var kommentar in tråd.Kommentare)
+                {
+                    <div class="comment-card">
+                       
+                        <p><strong>Kommentarer</strong></p>
+                        <p><strong>Kommentarens Brugernavn:</strong> @kommentar.Bruger.Brugernavn</p>
+                        <p><strong>Kommentar Votes:</strong> @(kommentar.Upvote - kommentar.Downvote)</p>
+                        <div class="vote-buttons">
+                            <button class="upvote-button" @onclick="() => UpvoteKommentar(tråd.TrådeId, kommentar.KommentarId)">Upvote Kommentar</button>
+                            <button class="downvote-button" @onclick="() => DownvoteKommentar(tråd.TrådeId, kommentar.KommentarId)">Downvote Kommentar</button>
+                        </div>
+                    </div>
+                    
+                }
+                <hr>
+            </li>
+                     <h1><span>&#8203;</span></h1>
 
-<h1>Threads</h1>
+        }
 
-<ul>
+    }
+    else
+    {
+        <p>Loading data...</p>
+    }
+</ul>
+
+@*<ul>
     <table class="thread-table">
     <thead>
         <tr>
@@ -69,7 +117,7 @@
     {
         <p>Loading data...</p>
     }
-</ul>
+</ul>*@
 <!-- Post en tråd -->
 <EditForm Model="newTråd" OnValidSubmit="HandleValidSubmitTråd">
     <DataAnnotationsValidator />
