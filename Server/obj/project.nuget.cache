@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "rkitFOUWq5Kej6O7oNCF6GWV+PUteZ3DvuWpCmqUxZxnlcMyZTb3zAuWdyDZItjWZC18hbJO7/01BT7CUGjUug==",
+  "dgSpecHash": "ZEmmgfOSpZcGDjneBir2gRf0AShftUprPQad754rZon7qA+ZAOTux6CTqgfJx1HHXZLJCnOfqYLloFGT2/OHRw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Asbjørn\\Desktop\\redditclone2023\\MiniProjekt2023\\Server\\Server.csproj",
+  "projectFilePath": "C:\\Users\\Asbjørn\\Desktop\\2023reddit\\MiniProjekt2023\\Server\\Server.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Asbjørn\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\Asbjørn\\.nuget\\packages\\microsoft.data.sqlite.core\\7.0.12\\microsoft.data.sqlite.core.7.0.12.nupkg.sha512",
@@ -32,7 +32,11 @@
     "C:\\Users\\Asbjørn\\.nuget\\packages\\system.memory\\4.5.3\\system.memory.4.5.3.nupkg.sha512",
     "C:\\Users\\Asbjørn\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
     "C:\\Users\\Asbjørn\\.nuget\\packages\\system.text.encodings.web\\7.0.0\\system.text.encodings.web.7.0.0.nupkg.sha512",
-    "C:\\Users\\Asbjørn\\.nuget\\packages\\system.text.json\\7.0.0\\system.text.json.7.0.0.nupkg.sha512"
+    "C:\\Users\\Asbjørn\\.nuget\\packages\\system.text.json\\7.0.0\\system.text.json.7.0.0.nupkg.sha512",
+    "C:\\Users\\Asbjørn\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.21\\microsoft.windowsdesktop.app.ref.6.0.21.nupkg.sha512",
+    "C:\\Users\\Asbjørn\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.21\\microsoft.netcore.app.ref.6.0.21.nupkg.sha512",
+    "C:\\Users\\Asbjørn\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.21\\microsoft.aspnetcore.app.ref.6.0.21.nupkg.sha512",
+    "C:\\Users\\Asbjørn\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\6.0.21\\microsoft.netcore.app.host.win-x64.6.0.21.nupkg.sha512"
   ],
   "logs": []
 }

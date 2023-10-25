@@ -5,22 +5,64 @@
 <h1>Threads</h1>
 
 <ul>
-    @if (trådes != null)
-    {
-        @foreach (var tråd in trådes)
+    <table class="thread-table">
+    <thead>
+        <tr>
+            <th>Trådens ID</th>
+            <th>Overskrift</th>
+            <th>Tekst</th>
+            <th>Skrevet af</th>
+            <th>Dato</th>
+            <th>Tråd Votes</th>
+            <th>Vote Knapper</th>
+
+
+            
+        </tr>
+    </thead>
+    <tbody>
+        @if (trådes != null)
         {
-            <li>
-                <div class="thread-item">
-                    <strong>@tråd.Tråde_Overskrift</strong><br />
-                    <p>@tråd.Tekst</p>
-                    <p>Skrevet af: @tråd.bruger.Brugernavn</p>
-                    <!-- Viser en Votes ud fra hver tråd hvor der minuses med dens upvote og downvote-->
-                    <p>Votes: @(tråd.Upvote - tråd.Downvote)</p>
-                    <button style="@SynlighedUpvote" @onclick="() => Upvote(tråd)">Upvote</button>
-                    <button style="@SynlighedDownvote" @onclick="() => Downvote(tråd)">Downvote</button>
-                </div>
-            </li>
+            @foreach (var tråd in trådes)
+            {
+                <tr>
+                    <td>@tråd.TrådeId</td>
+                    <td><strong>@tråd.Tråde_Overskrift</strong></td>
+                    <td>@tråd.Tekst</td>
+                    <td>@tråd.bruger.Brugernavn</td>
+                    <td>@tråd.Dato</td>
+                    <td>@(tråd.Upvote - tråd.Downvote)</td>
+                    <td>
+                        <button class="upvote-button" style="@SynlighedUpvote" @onclick="() => UpvoteTråd(tråd.TrådeId)">Upvote Post</button>
+                        <button class="downvote-button" style="@SynlighedDownvote" @onclick="() => DownvoteTråd(tråd.TrådeId)">Downvote Post</button>
+                    </td>
+                </tr>
+                @foreach (var kommentar in tråd.Kommentare)
+                {
+                                <th>Kommentarer</th>
+            <th>Kommentarens Brugernavn</th>
+            <th>Kommentar Votes</th>
+            <th>Vote knapper</th>
+                    <tr>
+                        <td>@kommentar.Tekst</td>
+                        <td>@kommentar.Bruger.Brugernavn</td>
+                        <td>@(kommentar.Upvote - kommentar.Downvote)</td>
+                        <td>
+                            <button class="upvote-button" @onclick="() => UpvoteKommentar(tråd.TrådeId, kommentar.KommentarId)">Upvote Kommentar</button>
+                            <button class="downvote-button" @onclick="() => DownvoteKommentar(tråd.TrådeId, kommentar.KommentarId)">Downvote Kommentar</button>
+                        </td>
+                    </tr>
+                }
+            }
         }
+         <h1><span>&#8203;</span></h1>
+    </tbody>
+</table>
+
+           
+        }
+         <h1><span>&#8203;</span></h1>
+        <h3>Skriv en Tråd her!</h3>
 
     }
     else
@@ -28,8 +70,8 @@
         <p>Loading data...</p>
     }
 </ul>
-
-<EditForm Model="newTråd" OnValidSubmit="HandleValidSubmit">
+<!-- Post en tråd -->
+<EditForm Model="newTråd" OnValidSubmit="HandleValidSubmitTråd">
     <DataAnnotationsValidator />
     <ValidationSummary />
     <div class="form-group">
@@ -50,22 +92,58 @@
     <button type="submit" class="btn btn-primary">Opret Tråd</button>
 </EditForm>
 
+         <h1><span>&#8203;</span></h1>
+         <h3>Skriv en kommentar her!</h3>
+
+<!--Post kommentar -->
+<EditForm Model="newKommentar" OnValidSubmit="HandleValidSubmitKommentar">
+    <DataAnnotationsValidator />
+    <ValidationSummary />
+    <div class="form-group">
+        <label for="Tekst">Tekst</label>
+        <InputText id="Tekst" @bind-Value="newKommentar.Tekst" class="form-control" />
+    </div>
+
+    <div class="form-group">
+        <label for="Brugernavn">Forfatternavn</label>
+        <InputText id="Brugernavn" @bind-Value="newKommentar.Bruger.Brugernavn" class="form-control" />
+    </div>
+
+     <div class="form-group">
+        <label for="TrådeId">Hvilken tråd id vil du kommentere?</label>
+        <!-- Her bruges den midlertidlig variable beskrevet længere nede-->
+        <InputNumber id="TrådId" @bind-Value="TrådId" class="form-control" />
+    </div>
+
+
+
+    <button type="submit" class="btn btn-primary">Opret Kommentar</button>
+</EditForm>
+
 @code {
-    private Tråde[] trådes;
+    private Tråde[]? trådes;
     private Tråde newTråd = new Tråde();
-    private string errorMessage;
+    // Laver en tom/default bruger
+    private Kommentar newKommentar = new Kommentar("", new Bruger(""));
+    // For at sende et id når man bruger metoden "PostKommentarsAsync()" fra service kræver det et TrådId men datamodellen Kommentar har den ikke
+    // Derfor laver vi en midlertidlig variabel der kan sende et id med når vi bruger metoden oppe i editform
+    private int TrådId = 0;
+
+
+    private string? errorMessage;
     // variablerne nedenunder bruges til at ændre udseendet på knapperne når man trykker på dem
     private string SynlighedUpvote = "visibility: visible;";
     private string SynlighedDownvote = "visibility: visible;";
 
     [Inject]
-    private HttpClient Http { get; set; }
+    private HttpClient? Http { get; set; }
 
     protected override async Task OnInitializedAsync()
     {
         try
         {
             trådes = await ApiService.GetTrådesAsync();
+            StateHasChanged();
         }
         catch (Exception ex)
         {
@@ -74,8 +152,8 @@
         }
         StateHasChanged();
     }
-
-    public async Task HandleValidSubmit()
+    //HandleValidSumbit Tråd
+    public async Task HandleValidSubmitTråd()
     {
         try
         {
@@ -83,7 +161,26 @@
             // visker editformen ren
             newTråd = new Tråde();
             // Opdater Listen med den tråd man lige har lavet ved at kalde på Get metoden igen
-            await ApiService.GetTrådesAsync();
+            trådes = await ApiService.GetTrådesAsync();
+            StateHasChanged();
+        }
+        catch (Exception ex)
+        {
+            errorMessage = "Fejl ved oprettelse af tråd:" + ex.Message;
+            Console.WriteLine(ex);
+        }
+    }
+    //HandleValidSumbit Kommentar
+    public async Task HandleValidSubmitKommentar()
+    {
+        try
+        {
+            var createdKommentar = await ApiService.PostKommentarsAsync(newKommentar, TrådId);
+            // visker editformen ren
+            // Laver en default/tom instans af Bruger når man har skrevet en kommentar
+            newKommentar = new Kommentar("", new Bruger(newKommentar.Bruger.Brugernavn));
+            // Opdater Listen med den tråd man lige har lavet ved at kalde på Get metoden igen
+            trådes = await ApiService.GetTrådesAsync();
             StateHasChanged();
         }
         catch (Exception ex)
@@ -93,22 +190,43 @@
         }
     }
 
-    // metoder der bliver kaldt når man trykker på downvote eller upvote knapperne
-    private void Upvote(Tråde tråd)
+    // metoder der bliver kaldt når man trykker på downvote eller upvote knapperne på Tråde
+    private async Task UpvoteTråd(int id)
     {
-        tråd.Upvote++;
+        await ApiService.PutUpvoteTrådAsync(id);
+        trådes = await ApiService.GetTrådesAsync();
+        StateHasChanged();
         //Ændre udseendet på knapperne når man trykker på dem
         SynlighedUpvote = "opacity: 0.5;";
         SynlighedDownvote = "visibility: visible;";
-        // Lav noget der opdater serveren/db med upvote
+
     }
 
-    private void Downvote(Tråde tråd)
+    private async Task DownvoteTråd(int id)
     {
-        tråd.Downvote++;
+        await ApiService.PutDownvoteTrådAsync(id);
+        trådes = await ApiService.GetTrådesAsync();
+        StateHasChanged();
         //Ændre udseendet på knapperne når man trykker på dem
         SynlighedDownvote = "opacity: 0.5;";
         SynlighedUpvote = "visibility: visible;";
-        // Lav noget der opdater serveren/db med downvote
+
     }
+
+
+    // metoder der bliver kaldt når man trykker på downvote eller upvote knapperne på comments
+    private async Task UpvoteKommentar(int idT, int idK)
+    {
+        await ApiService.UpvoteKommentarAsync(idT, idK);
+        trådes = await ApiService.GetTrådesAsync();
+        StateHasChanged();
+    }
+
+    private async Task DownvoteKommentar(int idT, int idK)
+    {
+        await  ApiService.DownvoteKommentarAsync(idT, idK);
+        trådes = await ApiService.GetTrådesAsync();
+        StateHasChanged();
+    }
+    
 }

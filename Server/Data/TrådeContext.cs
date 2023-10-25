@@ -11,6 +11,7 @@ namespace Data
     public class TrådeContext : DbContext
     {
         public DbSet<Tråde> Trådes => Set<Tråde>();
+        public DbSet<Kommentar> Kommentar => Set<Kommentar>();
 
 
 

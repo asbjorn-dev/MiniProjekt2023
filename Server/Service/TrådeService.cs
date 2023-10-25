@@ -35,6 +35,40 @@ namespace Service
             db.SaveChanges();
             return kommentar;
         }
-        // Mangler like/dislike på clientside
+        // 2 metoder til upvote downvote Tråde
+        public async Task<Tråde> PutUpvoteTrådAsync(int id)
+        {
+            var UpvoteTråd = db.Trådes.First(b => b.TrådeId == id);
+            UpvoteTråd.Upvote++;
+            db.SaveChanges();
+            return UpvoteTråd;
+        }
+        public async Task<Tråde> PutDownvoteTrådAsync(int id)
+        {
+            var DownvoteTråd = db.Trådes.First(b => b.TrådeId == id);
+            DownvoteTråd.Downvote++;
+            db.SaveChanges();
+            return DownvoteTråd;
+        }
+        // 2 metoder til upvote downvote
+
+        public async Task<Kommentar> PutUpvoteKommentarAsync(int idT, int idK)
+        {
+            var FindTrådId = db.Trådes.First(b => b.TrådeId == idT);
+            var FindKommentarId = db.Kommentar.First(b => b.KommentarId == idK);
+
+            FindKommentarId.Upvote++;
+            db.SaveChanges();
+            return FindKommentarId;
+        }
+        public async Task<Kommentar> PutDownvoteKommentarAsync(int idT, int idK)
+        {
+            var FindTrådId = db.Trådes.First(b => b.TrådeId == idT);
+            var FindKommentarId = db.Kommentar.First(b => b.KommentarId == idK);
+
+            FindKommentarId.Downvote++;
+            db.SaveChanges();
+            return FindKommentarId;
+        }
     }
 }

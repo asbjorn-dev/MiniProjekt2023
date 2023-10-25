@@ -1,3 +1,72 @@
+/* /Pages/TrådeList.razor.rz.scp.css */
+<style >
+.thread-table[b-cbpm7o9pdg] {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #ccc;
+    margin-top: 20px;
+}
+
+.thread-table th[b-cbpm7o9pdg] {
+    background-color: #ff4500;
+    color: white;
+    text-align: left;
+    padding: 10px;
+}
+
+.thread-table th[b-cbpm7o9pdg], .thread-table td[b-cbpm7o9pdg] {
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+.thread-item[b-cbpm7o9pdg] {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    margin: 15px 0;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.comment-item[b-cbpm7o9pdg] {
+    background-color: #f6f6f6;
+    border: 1px solid #ddd;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.upvote-button[b-cbpm7o9pdg], .downvote-button[b-cbpm7o9pdg] {
+    background-color: #ff4500;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 0 5px;
+    transition: background-color 0.3s;
+}
+
+    .upvote-button:hover[b-cbpm7o9pdg], .downvote-button:hover[b-cbpm7o9pdg] {
+        background-color: #ff6000;
+    }
+
+a[b-cbpm7o9pdg] {
+    color: #0079d3;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+    a:hover[b-cbpm7o9pdg] {
+        color: #005ea7;
+    }
+
+.form-group[b-cbpm7o9pdg] {
+    margin: 10px 0;
+}
+
+</style[b-cbpm7o9pdg] >
 /* /Shared/MainLayout.razor.rz.scp.css */
 .page[b-ocnk4r8tjs] {
     position: relative;

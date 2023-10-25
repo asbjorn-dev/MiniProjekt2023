@@ -62,10 +62,31 @@ app.MapPost("/api/tråde", async (DataService service, Tråde tråd) =>
     return trådes;
 });
 // en post til at kommentere på en bestemt tråd id (Du får id med i URL/api'en
-app.MapPost("/api/tråde/kommentar/{id}", async (DataService service, Kommentar kommentar, int id) =>
+app.MapPost("/api/tråde/{id}/kommentar/", async (DataService service, Kommentar kommentar, int id) =>
 {
     var trådes = await service.PostKommentarAsync(kommentar, id);
     return trådes;
 });
+app.MapPut("/api/tråde/{id}/upvote/", async (DataService service, int id) =>
+    {
+    var UpvoteTråd = await service.PutUpvoteTrådAsync(id);
+    return UpvoteTråd;
+});
+app.MapPut("/api/tråde/{id}/downvote/", async (DataService service, int id) =>
+{
+    var DownvoteTrådes = await service.PutDownvoteTrådAsync(id);
+    return DownvoteTrådes;
+});
+app.MapPut("/api/tråde/{idT}/kommentar/{idK}/upvote", async (DataService service, int idT, int idK) =>
+{
+    var UpvoteKommentar = await service.PutUpvoteKommentarAsync(idT, idK);
+    return UpvoteKommentar;
+});
+app.MapPut("/api/tråde/{idT}/kommentar/{idK}/downvote", async (DataService service, int idT, int idK) =>
+{
+    var DownvoteKommentar = await service.PutDownvoteKommentarAsync(idT, idK);
+    return DownvoteKommentar;
+});
 
 app.Run();
+
