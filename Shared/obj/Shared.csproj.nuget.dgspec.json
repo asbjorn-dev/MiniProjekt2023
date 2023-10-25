@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Asbjørn\\Desktop\\redditclone2023\\MiniProjekt2023\\Shared\\Shared.csproj": {}
+    "C:\\Users\\45204\\Desktop\\ProjektReddit\\Shared\\Shared.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Asbjørn\\Desktop\\redditclone2023\\MiniProjekt2023\\Shared\\Shared.csproj": {
+    "C:\\Users\\45204\\Desktop\\ProjektReddit\\Shared\\Shared.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Asbjørn\\Desktop\\redditclone2023\\MiniProjekt2023\\Shared\\Shared.csproj",
+        "projectUniqueName": "C:\\Users\\45204\\Desktop\\ProjektReddit\\Shared\\Shared.csproj",
         "projectName": "Shared",
-        "projectPath": "C:\\Users\\Asbjørn\\Desktop\\redditclone2023\\MiniProjekt2023\\Shared\\Shared.csproj",
-        "packagesPath": "C:\\Users\\Asbjørn\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Asbjørn\\Desktop\\redditclone2023\\MiniProjekt2023\\Shared\\obj\\",
+        "projectPath": "C:\\Users\\45204\\Desktop\\ProjektReddit\\Shared\\Shared.csproj",
+        "packagesPath": "C:\\Users\\45204\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\45204\\Desktop\\ProjektReddit\\Shared\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Asbjørn\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\45204\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -26,7 +22,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -72,7 +67,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
         }
       }
     }
