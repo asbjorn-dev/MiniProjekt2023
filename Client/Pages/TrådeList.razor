@@ -46,8 +46,13 @@
                         <p><strong>Tråd Votes:</strong> @(tråd.Upvote - tråd.Downvote)</p>
                     </div>
                     <div class="vote-buttons">
-                        <button class="upvote-button" @onclick="() => UpvoteTråd(tråd.TrådeId)">Upvote Post</button>
-                        <button class="downvote-button" @onclick="() => DownvoteTråd(tråd.TrådeId)">Downvote Post</button>
+                        <button class="upvote-button" @onclick="() => UpvoteTråd(tråd.TrådeId)">
+                            Upvote Post <span>&#9650;</span>
+                        </button>
+                        <button class="downvote-button" @onclick="() => DownvoteTråd(tråd.TrådeId)">
+                            Downvote Post <span>&#9660;</span>
+                        </button>
+
                     </div>
                     @foreach (var kommentar in tråd.Kommentare)
                     {
@@ -57,8 +62,13 @@
                             <p><strong>Dato:</strong> @kommentar.Dato</p>
                             <p><strong>Kommentar Votes:</strong> @(kommentar.Upvote - kommentar.Downvote)</p>
                             <div class="vote-buttons">
-                                <button class="upvote-button" @onclick="() => UpvoteKommentar(tråd.TrådeId, kommentar.KommentarId)">Upvote Kommentar</button>
-                                <button class="downvote-button" @onclick="() => DownvoteKommentar(tråd.TrådeId, kommentar.KommentarId)">Downvote Kommentar</button>
+                                <button class="upvote-button" @onclick="() => UpvoteKommentar(tråd.TrådeId, kommentar.KommentarId)">
+                                    Upvote Kommentar <span>&#9650;</span>
+                                </button>
+                                <button class="downvote-button" @onclick="() => DownvoteKommentar(tråd.TrådeId, kommentar.KommentarId)">
+                                    Downvote Kommentar <span>&#9660;</span>
+                                </button>
+
                             </div>
                         </div>
                     }

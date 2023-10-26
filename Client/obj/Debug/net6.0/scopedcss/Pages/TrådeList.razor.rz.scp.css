@@ -1,4 +1,4 @@
-/* Apply styles to the body */
+/* Anvend stilarter til body */
 body[b-cbpm7o9pdg] {
     font-family: Arial, sans-serif;
     background-color: #f0f0f0;
@@ -6,7 +6,7 @@ body[b-cbpm7o9pdg] {
     margin: 0;
 }
 
-/* Style the main title */
+/* Style hovedtitlen */
 h1[b-cbpm7o9pdg] {
     text-align: center;
     background-color: #0079D3;
@@ -19,14 +19,14 @@ h1[b-cbpm7o9pdg] {
     font-size: 2rem;
 }
 
-/* Style the container for the thread list */
+/* Stil containeren til trådlisten */
 .thread-list[b-cbpm7o9pdg] {
     list-style: none;
     padding: 0;
     margin: 0;
 }
 
-/* Style each thread card */
+/* Stil hver trådkort */
 .thread-card[b-cbpm7o9pdg] {
     background-color: white;
     border: 1px solid #ccc;
@@ -36,24 +36,24 @@ h1[b-cbpm7o9pdg] {
     position: relative;
 }
 
-/* Style thread titles */
+/* Stil trådoverskrifter */
 .thread-title[b-cbpm7o9pdg] {
     font-size: 1.5rem;
     color: #0079D3;
 }
 
-/* Style thread info */
+/* Stil trådinfo */
 .thread-info[b-cbpm7o9pdg] {
     margin-top: 10px;
 }
 
-    /* Style thread metadata */
+    /* Stil trådmetadata */
     .thread-info p[b-cbpm7o9pdg] {
         margin: 0;
         font-size: 0.9rem;
     }
 
-/* Style the vote buttons */
+/* Stil vote-knapper */
 .vote-buttons[b-cbpm7o9pdg] {
     display: flex;
     justify-content: space-between;
@@ -71,15 +71,15 @@ h1[b-cbpm7o9pdg] {
     transition: background-color 0.2s ease;
 }
 
+    .upvote-button:hover[b-cbpm7o9pdg] {
+        background-color: green;
+    }
+
     .downvote-button:hover[b-cbpm7o9pdg] {
         background-color: red;
     }
 
-upvote-button:hover[b-cbpm7o9pdg] {
-    background-color: green;
-}
-
-/* Style comments */
+/* Stil kommentarer */
 .comment-card[b-cbpm7o9pdg] {
     background-color: #f5f5f5;
     border: 1px solid #ccc;
@@ -93,14 +93,14 @@ upvote-button:hover[b-cbpm7o9pdg] {
         font-size: 0.9rem;
     }
 
-/* Add some spacing between elements */
+/* Tilføj afstand mellem elementer */
 h1[b-cbpm7o9pdg],
 ul[b-cbpm7o9pdg],
 .edit-form[b-cbpm7o9pdg] {
     margin-bottom: 20px;
 }
 
-/* Style the GitHub link */
+/* Stil GitHub-linket */
 a[b-cbpm7o9pdg] {
     display: block;
     text-align: center;
