@@ -2,16 +2,22 @@
 @using global::Shared;
 @inject ApiService ApiService
 
+
 <link rel="stylesheet" href="TrådeList.razor.css" />
 <body>
     <h1>Tråddit</h1>
 
+    <!-- Her begynder hovedindholdet af siden. -->
+
     <section class="thread-creation">
         <h2>Create a New Thread</h2>
-        <!-- Lav et ny thread -->
+        <!-- Lav et nyt tråd-formular -->
         <EditForm Model="newTråd" OnValidSubmit="HandleValidSubmitTråd">
             <DataAnnotationsValidator />
             <ValidationSummary />
+
+            <!-- Formular til oprettelse af en ny tråd. -->
+
             <div class="form-group">
                 <label for="Tråde_Overskrift">Overskrift</label>
                 <InputText id="Tråde_Overskrift" @bind-Value="newTråd.Tråde_Overskrift" class="form-control" />
@@ -22,7 +28,7 @@
                 <InputText id="Tekst" @bind-Value="newTråd.Tekst" class="form-control" />
             </div>
 
-            <div class="form-group">
+            <div class "form-group">
                 <label for="Brugernavn">Forfatternavn</label>
                 <InputText id="Brugernavn" @bind-Value="newTråd.bruger.Brugernavn" class="form-control" />
             </div>
@@ -31,6 +37,8 @@
         </EditForm>
     </section>
 
+    <!-- Her er formular til oprettelse af en ny tråd. -->
+
     <ul class="thread-list">
         @if (trådes != null)
         {
@@ -38,6 +46,9 @@
             {
                 <li class="thread-card">
                     <h2 class="thread-title">@tråd.Tråde_Overskrift</h2>
+
+                    <!-- Her vises trådoplysninger og titel. -->
+
                     <div class="thread-info">
                         <p>Trådens ID: @tråd.TrådeId</p>
                         <p><strong>Tekst:</strong> @tråd.Tekst</p>
@@ -45,6 +56,7 @@
                         <p><strong>Dato:</strong> @tråd.Dato</p>
                         <p><strong>Tråd Votes:</strong> @(tråd.Upvote - tråd.Downvote)</p>
                     </div>
+
                     <div class="vote-buttons">
                         <button class="upvote-button" @onclick="() => UpvoteTråd(tråd.TrådeId)">
                             Upvote Post <span>&#9650;</span>
@@ -52,8 +64,9 @@
                         <button class="downvote-button" @onclick="() => DownvoteTråd(tråd.TrådeId)">
                             Downvote Post <span>&#9660;</span>
                         </button>
-
                     </div>
+
+                    <!-- Her er oplysninger om tråden og opvote/downvote-knapper. -->
                     @foreach (var kommentar in tråd.Kommentare)
                     {
                         <div class="comment-card">
@@ -68,7 +81,6 @@
                                 <button class="downvote-button" @onclick="() => DownvoteKommentar(tråd.TrådeId, kommentar.KommentarId)">
                                     Downvote Kommentar <span>&#9660;</span>
                                 </button>
-
                             </div>
                         </div>
                     }
@@ -82,12 +94,16 @@
         }
     </ul>
 
+    <!-- Her vises tråde og kommentarer. -->
+
     <section class="comment-creation">
         <h3>Skriv en kommentar her!</h3>
-        <!-- Post kommentar Form -->
+
+        <!-- Kommentarformular -->
         <EditForm Model="newKommentar" OnValidSubmit="HandleValidSubmitKommentar">
             <DataAnnotationsValidator />
             <ValidationSummary />
+
             <div class="form-group">
                 <label for="Tekst">Tekst</label>
                 <InputText id="Tekst" @bind-Value="newKommentar.Tekst" class="form-control" />
