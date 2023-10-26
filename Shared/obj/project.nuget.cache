@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "47XD3HuKoPIKKYuWqhEON/kTNRmlpZzxIfLjdogCP4GO2b0Ai7+nl6uoJwAJSsIgKpz1rt1bgFbKL6TBRzi6Sw==",
+  "dgSpecHash": "l6OdWnzuLKkNtT3xcaKYZz2uJUNzRtHj6dd0I8VYCngFYAFKQhDvk6iblt7Mg+UPTIWvUB2ONtunU5yg1fv+pA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\45204\\Desktop\\ProjektReddit\\Shared\\Shared.csproj",
+  "projectFilePath": "C:\\Users\\45204\\Desktop\\RedditProjekt ny\\Shared\\Shared.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\45204\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\45204\\.nuget\\packages\\microsoft.data.sqlite.core\\7.0.12\\microsoft.data.sqlite.core.7.0.12.nupkg.sha512",

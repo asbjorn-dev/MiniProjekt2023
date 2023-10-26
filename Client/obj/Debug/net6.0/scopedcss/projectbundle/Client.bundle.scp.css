@@ -1,15 +1,10 @@
 /* /Pages/TrådeList.razor.rz.scp.css */
-/*body {
-    font-family: Georgia, serif;
-}
-h1 {
-    font-size: 60px;
-}*/
 /* Apply styles to the body */
 body[b-cbpm7o9pdg] {
     font-family: Arial, sans-serif;
     background-color: #f0f0f0;
     padding: 20px;
+    margin: 0;
 }
 
 /* Style the main title */
@@ -18,12 +13,18 @@ h1[b-cbpm7o9pdg] {
     background-color: #0079D3;
     color: white;
     padding: 10px;
+    margin: 0;
+    font-family: 'Arial Black', sans-serif;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-size: 2rem;
 }
 
 /* Style the container for the thread list */
 .thread-list[b-cbpm7o9pdg] {
     list-style: none;
     padding: 0;
+    margin: 0;
 }
 
 /* Style each thread card */
@@ -32,7 +33,8 @@ h1[b-cbpm7o9pdg] {
     border: 1px solid #ccc;
     border-radius: 5px;
     margin: 10px 0;
-    padding: 10px;
+    padding: 15px;
+    position: relative;
 }
 
 /* Style thread titles */
@@ -67,12 +69,16 @@ h1[b-cbpm7o9pdg] {
     padding: 5px 10px;
     border-radius: 5px;
     cursor: pointer;
+    transition: background-color 0.2s ease;
 }
 
-    .upvote-button:hover[b-cbpm7o9pdg],
     .downvote-button:hover[b-cbpm7o9pdg] {
-        background-color: #005FA6;
+        background-color: red;
     }
+
+upvote-button:hover[b-cbpm7o9pdg] {
+    background-color: green;
+}
 
 /* Style comments */
 .comment-card[b-cbpm7o9pdg] {
@@ -80,7 +86,7 @@ h1[b-cbpm7o9pdg] {
     border: 1px solid #ccc;
     border-radius: 5px;
     padding: 10px;
-    margin-top: 10px;
+    margin: 10px 0;
 }
 
     .comment-card p[b-cbpm7o9pdg] {
@@ -94,6 +100,19 @@ ul[b-cbpm7o9pdg],
 .edit-form[b-cbpm7o9pdg] {
     margin-bottom: 20px;
 }
+
+/* Style the GitHub link */
+a[b-cbpm7o9pdg] {
+    display: block;
+    text-align: center;
+    margin: 10px 0;
+    text-decoration: none;
+    color: #0079D3;
+}
+
+    a:hover[b-cbpm7o9pdg] {
+        color: #005FA6;
+    }
 /* /Shared/MainLayout.razor.rz.scp.css */
 .page[b-ocnk4r8tjs] {
     position: relative;

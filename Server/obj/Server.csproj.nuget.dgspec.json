@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\45204\\Desktop\\ProjektReddit\\Server\\Server.csproj": {}
+    "C:\\Users\\45204\\Desktop\\RedditProjekt ny\\Server\\Server.csproj": {}
   },
   "projects": {
-    "C:\\Users\\45204\\Desktop\\ProjektReddit\\Server\\Server.csproj": {
+    "C:\\Users\\45204\\Desktop\\RedditProjekt ny\\Server\\Server.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\45204\\Desktop\\ProjektReddit\\Server\\Server.csproj",
+        "projectUniqueName": "C:\\Users\\45204\\Desktop\\RedditProjekt ny\\Server\\Server.csproj",
         "projectName": "Server",
-        "projectPath": "C:\\Users\\45204\\Desktop\\ProjektReddit\\Server\\Server.csproj",
+        "projectPath": "C:\\Users\\45204\\Desktop\\RedditProjekt ny\\Server\\Server.csproj",
         "packagesPath": "C:\\Users\\45204\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\45204\\Desktop\\ProjektReddit\\Server\\obj\\",
+        "outputPath": "C:\\Users\\45204\\Desktop\\RedditProjekt ny\\Server\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\45204\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -29,8 +29,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\45204\\Desktop\\ProjektReddit\\Shared\\Shared.csproj": {
-                "projectPath": "C:\\Users\\45204\\Desktop\\ProjektReddit\\Shared\\Shared.csproj"
+              "C:\\Users\\45204\\Desktop\\RedditProjekt ny\\Shared\\Shared.csproj": {
+                "projectPath": "C:\\Users\\45204\\Desktop\\RedditProjekt ny\\Shared\\Shared.csproj"
               }
             }
           }
@@ -79,14 +79,14 @@
         }
       }
     },
-    "C:\\Users\\45204\\Desktop\\ProjektReddit\\Shared\\Shared.csproj": {
+    "C:\\Users\\45204\\Desktop\\RedditProjekt ny\\Shared\\Shared.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\45204\\Desktop\\ProjektReddit\\Shared\\Shared.csproj",
+        "projectUniqueName": "C:\\Users\\45204\\Desktop\\RedditProjekt ny\\Shared\\Shared.csproj",
         "projectName": "Shared",
-        "projectPath": "C:\\Users\\45204\\Desktop\\ProjektReddit\\Shared\\Shared.csproj",
+        "projectPath": "C:\\Users\\45204\\Desktop\\RedditProjekt ny\\Shared\\Shared.csproj",
         "packagesPath": "C:\\Users\\45204\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\45204\\Desktop\\ProjektReddit\\Shared\\obj\\",
+        "outputPath": "C:\\Users\\45204\\Desktop\\RedditProjekt ny\\Shared\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\45204\\AppData\\Roaming\\NuGet\\NuGet.Config",

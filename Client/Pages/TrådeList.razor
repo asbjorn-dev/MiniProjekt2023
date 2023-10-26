@@ -4,105 +4,100 @@
 
 <link rel="stylesheet" href="TrådeList.razor.css" />
 <body>
-<h1>Tråddit </h1>
+    <h1>Tråddit</h1>
 
-<ul class="thread-list">
-    @if (trådes != null)
-    {
-        @foreach (var tråd in trådes)
+    <section class="thread-creation">
+        <h2>Create a New Thread</h2>
+        <!-- Lav et ny thread -->
+        <EditForm Model="newTråd" OnValidSubmit="HandleValidSubmitTråd">
+            <DataAnnotationsValidator />
+            <ValidationSummary />
+            <div class="form-group">
+                <label for="Tråde_Overskrift">Overskrift</label>
+                <InputText id="Tråde_Overskrift" @bind-Value="newTråd.Tråde_Overskrift" class="form-control" />
+            </div>
+
+            <div class="form-group">
+                <label for="Tekst">Tekst</label>
+                <InputText id="Tekst" @bind-Value="newTråd.Tekst" class="form-control" />
+            </div>
+
+            <div class="form-group">
+                <label for="Brugernavn">Forfatternavn</label>
+                <InputText id="Brugernavn" @bind-Value="newTråd.bruger.Brugernavn" class="form-control" />
+            </div>
+
+            <button type="submit" class="btn btn-primary">Opret Tråd</button>
+        </EditForm>
+    </section>
+
+    <ul class="thread-list">
+        @if (trådes != null)
         {
-            
-            <li class="thread-card">
-                
-                <h2 class="thread-title">@tråd.Tråde_Overskrift</h2>
-                <div class="thread-info">
-                    
-                    <p>Trådens ID: @tråd.TrådeId</p>
-                    <p><strong>Tekst:</strong> @tråd.Tekst</p>
-                    <p><strong>Skrevet af:</strong> @tråd.bruger.Brugernavn</p>
-                    <p><strong>Dato:</strong> @tråd.Dato</p>
-                    <p><strong>Tråd Votes:</strong> @(tråd.Upvote - tråd.Downvote)</p>
-                </div>
-                <div class="vote-buttons">
-                    <button class="upvote-button" @onclick="() => UpvoteTråd(tråd.TrådeId)">Upvote Post</button>
-                    <button class="downvote-button" @onclick="() => DownvoteTråd(tråd.TrådeId)">Downvote Post</button>
-                </div>
-                @foreach (var kommentar in tråd.Kommentare)
-                {
-                    <div class="comment-card">
-                        <p><strong>Tekst:</strong> @kommentar.Tekst</p>
-                        <p><strong>Kommentarens Brugernavn:</strong> @kommentar.Bruger.Brugernavn</p>
-                        <p><strong>Dato:</strong> @kommentar.Dato</p>
-                        <p><strong>Kommentar Votes:</strong> @(kommentar.Upvote - kommentar.Downvote)</p>
-                        <div class="vote-buttons">
-                            <button class="upvote-button" @onclick="() => UpvoteKommentar(tråd.TrådeId, kommentar.KommentarId)">Upvote Kommentar</button>
-                            <button class="downvote-button" @onclick="() => DownvoteKommentar(tråd.TrådeId, kommentar.KommentarId)">Downvote Kommentar</button>
-                        </div>
+            @foreach (var tråd in trådes)
+            {
+                <li class="thread-card">
+                    <h2 class="thread-title">@tråd.Tråde_Overskrift</h2>
+                    <div class="thread-info">
+                        <p>Trådens ID: @tråd.TrådeId</p>
+                        <p><strong>Tekst:</strong> @tråd.Tekst</p>
+                        <p><strong>Skrevet af:</strong> @tråd.bruger.Brugernavn</p>
+                        <p><strong>Dato:</strong> @tråd.Dato</p>
+                        <p><strong>Tråd Votes:</strong> @(tråd.Upvote - tråd.Downvote)</p>
                     </div>
-                }
-                <hr>
-            </li>
-                     <h1><span>&#8203;</span></h1>
-
+                    <div class="vote-buttons">
+                        <button class="upvote-button" @onclick="() => UpvoteTråd(tråd.TrådeId)">Upvote Post</button>
+                        <button class="downvote-button" @onclick="() => DownvoteTråd(tråd.TrådeId)">Downvote Post</button>
+                    </div>
+                    @foreach (var kommentar in tråd.Kommentare)
+                    {
+                        <div class="comment-card">
+                            <p><strong>Tekst:</strong> @kommentar.Tekst</p>
+                            <p><strong>Kommentarens Brugernavn:</strong> @kommentar.Bruger.Brugernavn</p>
+                            <p><strong>Dato:</strong> @kommentar.Dato</p>
+                            <p><strong>Kommentar Votes:</strong> @(kommentar.Upvote - kommentar.Downvote)</p>
+                            <div class="vote-buttons">
+                                <button class="upvote-button" @onclick="() => UpvoteKommentar(tråd.TrådeId, kommentar.KommentarId)">Upvote Kommentar</button>
+                                <button class="downvote-button" @onclick="() => DownvoteKommentar(tråd.TrådeId, kommentar.KommentarId)">Downvote Kommentar</button>
+                            </div>
+                        </div>
+                    }
+                    <hr>
+                </li>
+            }
         }
+        else
+        {
+            <p>Loading data...</p>
+        }
+    </ul>
 
-    }
-    else
-    {
-        <p>Loading data...</p>
-    }
-</ul>
+    <section class="comment-creation">
+        <h3>Skriv en kommentar her!</h3>
+        <!-- Post kommentar Form -->
+        <EditForm Model="newKommentar" OnValidSubmit="HandleValidSubmitKommentar">
+            <DataAnnotationsValidator />
+            <ValidationSummary />
+            <div class="form-group">
+                <label for="Tekst">Tekst</label>
+                <InputText id="Tekst" @bind-Value="newKommentar.Tekst" class="form-control" />
+            </div>
 
-         <h3>Skriv en Tråd her!</h3>
-<!-- Post en tråd -->
-<EditForm Model="newTråd" OnValidSubmit="HandleValidSubmitTråd">
-    <DataAnnotationsValidator />
-    <ValidationSummary />
-    <div class="form-group">
-        <label for="Tråde_Overskrift">Overskrift</label>
-        <InputText id="Tråde_Overskrift" @bind-Value="newTråd.Tråde_Overskrift" class="form-control" />
-    </div>
+            <div class="form-group">
+                <label for="Brugernavn">Forfatternavn</label>
+                <InputText id="Brugernavn" @bind-Value="newKommentar.Bruger.Brugernavn" class="form-control" />
+            </div>
 
-    <div class="form-group">
-        <label for="Tekst">Tekst</label>
-        <InputText id="Tekst" @bind-Value="newTråd.Tekst" class="form-control" />
-    </div>
+            <div class="form-group">
+                <label for="TrådeId">Hvilken tråd id vil du kommentere?</label>
+                <InputNumber id="TrådId" @bind-Value="TrådId" class="form-control" />
+            </div>
 
-    <div class="form-group">
-        <label for="Brugernavn">Forfatternavn</label>
-        <InputText id="Brugernavn" @bind-Value="newTråd.bruger.Brugernavn" class="form-control" />
-    </div>
-
-    <button type="submit" class="btn btn-primary">Opret Tråd</button>
-</EditForm>
-
-         <h3>Skriv en kommentar her!</h3>
-
-<!--Post kommentar -->
-<EditForm Model="newKommentar" OnValidSubmit="HandleValidSubmitKommentar">
-    <DataAnnotationsValidator />
-    <ValidationSummary />
-    <div class="form-group">
-        <label for="Tekst">Tekst</label>
-        <InputText id="Tekst" @bind-Value="newKommentar.Tekst" class="form-control" />
-    </div>
-
-    <div class="form-group">
-        <label for="Brugernavn">Forfatternavn</label>
-        <InputText id="Brugernavn" @bind-Value="newKommentar.Bruger.Brugernavn" class="form-control" />
-    </div>
-
-     <div class="form-group">
-        <label for="TrådeId">Hvilken tråd id vil du kommentere?</label>
-        <!-- Her bruges den midlertidlig variable beskrevet længere nede-->
-        <InputNumber id="TrådId" @bind-Value="TrådId" class="form-control" />
-    </div>
-
-
-
-    <button type="submit" class="btn btn-primary">Opret Kommentar</button>
-</EditForm>
+            <button type="submit" class="btn btn-primary">Opret Kommentar</button>
+        </EditForm>
+    </section>
 </body>
+
 @code {
     private Tråde[]? trådes;
     private Tråde newTråd = new Tråde();

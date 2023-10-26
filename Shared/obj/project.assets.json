@@ -1318,11 +1318,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\45204\\Desktop\\ProjektReddit\\Shared\\Shared.csproj",
+      "projectUniqueName": "C:\\Users\\45204\\Desktop\\RedditProjekt ny\\Shared\\Shared.csproj",
       "projectName": "Shared",
-      "projectPath": "C:\\Users\\45204\\Desktop\\ProjektReddit\\Shared\\Shared.csproj",
+      "projectPath": "C:\\Users\\45204\\Desktop\\RedditProjekt ny\\Shared\\Shared.csproj",
       "packagesPath": "C:\\Users\\45204\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\45204\\Desktop\\ProjektReddit\\Shared\\obj\\",
+      "outputPath": "C:\\Users\\45204\\Desktop\\RedditProjekt ny\\Shared\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\45204\\AppData\\Roaming\\NuGet\\NuGet.Config",
