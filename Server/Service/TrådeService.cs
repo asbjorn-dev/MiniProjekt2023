@@ -12,11 +12,12 @@ namespace Service
         {
             this.db = DB;
         }
-        // henter alle tråde
+        // henter alle tråde sorteret med dato
         public async Task<IEnumerable<Tråde>> GetTrådesAsync()
         {
             var Trådes = await db.Trådes.Include(b => b.bruger).Include(b => b.Kommentare)
                                           .ThenInclude(t => t.Bruger)
+                                          .OrderByDescending(b => b.Dato)
                                           .ToListAsync();
             return Trådes;
         }
