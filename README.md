@@ -1,4 +1,4 @@
-# Reddit Clone - Web API + EF Mini Project
+# Asbjørn, Rasmus Skriver og Salim Jama - Web API + EF Mini Project
 
 ## Version 1.0
 
